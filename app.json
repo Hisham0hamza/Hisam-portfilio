@@ -1,23 +1,31 @@
 {
   "expo": {
-    "name": "tpl",
-    "slug": "tpl",
+    "name": "Masar",
+    "slug": "masar",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "tpl",
+    "scheme": "masar",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "app.masar.mobile",
+      "supportsTablet": false,
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true,
+        "CFBundleLocalizations": ["en", "ar"]
+      }
     },
     "android": {
+      "package": "app.masar.mobile",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0F766E",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
     },
     "web": {
       "output": "static",
@@ -28,15 +36,41 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#FBF8F3",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 76,
+          "dark": { "backgroundColor": "#0E1215" }
         }
-      ]
+      ],
+      ["expo-localization", { "supportsRTL": true }],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Masar uses your location to show walks and trips near you."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Masar needs access to your photos to add event and profile pictures.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#0F766E"
+        }
+      ],
+      "@react-native-community/datetimepicker"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {}
     }
   }
 }

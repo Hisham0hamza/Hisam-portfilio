@@ -82,6 +82,13 @@ describe.skipIf(!ADMIN_URL)('applications & capacity', () => {
       expect(await errorOf(apply(walkerA, event))).toBe('already_applied');
     });
 
+    it('reports an existing application before a full event', async () => {
+      const event = await createEvent(db, host, { capacity: 1 });
+      await apply(walkerA, event);
+      expect(await errorOf(apply(walkerA, event))).toBe('already_applied');
+      expect(await errorOf(apply(walkerB, event))).toBe('event_full');
+    });
+
     it('does not let hosts apply to their own event', async () => {
       const event = await createEvent(db, host);
       expect(await errorOf(apply(host, event))).toBe('own_event');

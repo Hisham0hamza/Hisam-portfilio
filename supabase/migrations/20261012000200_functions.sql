@@ -288,22 +288,25 @@ begin
   if v_event.host_id = v_uid then
     raise exception 'own_event' using errcode = 'P0001';
   end if;
-  if v_event.approved_count >= v_event.capacity then
-    raise exception 'event_full' using errcode = 'P0001';
-  end if;
-
-  v_status := case when v_event.approval_mode = 'auto' then 'approved' else 'pending' end;
 
   select * into v_app from public.applications
    where event_id = p_event_id and user_id = v_uid
    for update;
-
   if found then
     if v_app.status in ('pending', 'approved', 'attended') then
       raise exception 'already_applied' using errcode = 'P0001';
     elsif v_app.status <> 'cancelled' then
       raise exception 'not_allowed' using errcode = 'P0001';
     end if;
+  end if;
+
+  if v_event.approved_count >= v_event.capacity then
+    raise exception 'event_full' using errcode = 'P0001';
+  end if;
+
+  v_status := case when v_event.approval_mode = 'auto' then 'approved' else 'pending' end;
+
+  if v_app.id is not null then
     update public.applications
        set status = v_status,
            message = nullif(trim(p_message), ''),
