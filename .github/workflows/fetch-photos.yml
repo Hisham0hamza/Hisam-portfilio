@@ -1,9 +1,12 @@
 name: Fetch event photos
 
-# Manually run: downloads freely licensed photos from Wikimedia Commons
+# Runs when the fetch script changes (or manually): downloads freely licensed photos from Wikimedia Commons
 # (scripts/fetch-event-photos.mjs) and commits them to public/images/events/.
 on:
   workflow_dispatch:
+  push:
+    branches: [claude/masar-walks-mvp-ghnmkz]
+    paths: [scripts/fetch-event-photos.mjs, .github/workflows/fetch-photos.yml]
 
 permissions:
   contents: write
