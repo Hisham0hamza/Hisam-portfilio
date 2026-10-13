@@ -17,7 +17,7 @@ export function useUserLocation() {
           if (!cancelled) setStatus('denied');
           return;
         }
-        const last = await Location.getLastKnownPositionAsync();
+        const last = await Location.getLastKnownPositionAsync().catch(() => null);
         if (last && !cancelled) setLocation({ lat: last.coords.latitude, lng: last.coords.longitude });
         const current = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Balanced });
         if (!cancelled) {

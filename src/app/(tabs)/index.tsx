@@ -96,7 +96,9 @@ function MapMode({ location, topInset }: { location: { lat: number; lng: number 
   // Drop the selection if it no longer matches the filters.
   const selected = selectedRaw && events.some((e) => e.id === selectedRaw.id) ? selectedRaw : null;
 
-  const showSearchArea = regionChangedSignificantly(searchedRegion ?? CAIRO, region);
+  // Compare against the last searched area, or the first region the map reported.
+  const [baseline, setBaseline] = useState<Region | null>(null);
+  const showSearchArea = baseline !== null && regionChangedSignificantly(searchedRegion ?? baseline, region);
 
   return (
     <View style={StyleSheet.absoluteFill}>
@@ -106,7 +108,10 @@ function MapMode({ location, topInset }: { location: { lat: number; lng: number 
         initialRegion={CAIRO}
         selectedId={selected?.id ?? null}
         onSelect={setSelected}
-        onRegionChange={setRegion}
+        onRegionChange={(r) => {
+          setRegion(r);
+          setBaseline((b) => b ?? r);
+        }}
         showsUserLocation={Boolean(location)}
       />
 

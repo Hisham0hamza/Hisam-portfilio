@@ -3,8 +3,11 @@ import { z } from 'zod';
 import { EVENT_LIST_SELECT, eventListItemSchema } from '@/features/events/schemas';
 import { unwrap } from '@/lib/errors';
 import { supabase } from '@/lib/supabase';
+import * as demo from '@/features/demo/api';
+import { env } from '@/lib/env';
 
 export async function getSavedEvents(userId: string) {
+  if (env.isDemo) return demo.getSavedEvents(userId);
   const data = unwrap(
     await supabase
       .from('saved_events')
@@ -19,6 +22,7 @@ export async function getSavedEvents(userId: string) {
 }
 
 export async function setSaved(userId: string, eventId: string, saved: boolean) {
+  if (env.isDemo) return demo.setSaved(userId, eventId, saved);
   if (saved) {
     unwrap(
       await supabase

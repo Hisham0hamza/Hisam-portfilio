@@ -1,0 +1,59 @@
+name: Deploy web app
+
+# Builds the Expo web app and publishes it to GitHub Pages:
+#   https://<owner>.github.io/<repo>/
+# Without Supabase secrets the site runs in demo mode (sample data stored in the browser).
+# To use your Supabase project, add repository secrets EXPO_PUBLIC_SUPABASE_URL and
+# EXPO_PUBLIC_SUPABASE_ANON_KEY (Settings → Secrets and variables → Actions).
+
+on:
+  push:
+    branches: [main, claude/masar-walks-mvp-ghnmkz]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Export web build
+        env:
+          WEB_BASE_URL: /${{ github.event.repository.name }}
+          EXPO_PUBLIC_SUPABASE_URL: ${{ secrets.EXPO_PUBLIC_SUPABASE_URL }}
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.EXPO_PUBLIC_SUPABASE_ANON_KEY }}
+          EXPO_PUBLIC_MAPBOX_TOKEN: ${{ secrets.EXPO_PUBLIC_MAPBOX_TOKEN }}
+        run: |
+          npx expo export --platform web --output-dir dist
+          # Single-page app: GitHub Pages serves 404.html for deep links like /event/<id>.
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

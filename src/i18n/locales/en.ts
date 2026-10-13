@@ -155,6 +155,7 @@ const en = {
   event: {
     notFound: 'This event isn’t available.',
     share: 'Share',
+    linkCopied: 'Link copied to clipboard',
     save: 'Save',
     unsave: 'Remove from saved',
     hostedBy: 'Hosted by',
@@ -354,6 +355,8 @@ const en = {
     system: 'System',
     light: 'Light',
     dark: 'Dark',
+    resetDemo: 'Reset demo data',
+    resetDemoBody: 'All events, applications and reviews you created in this browser will be removed.',
   },
   auth: {
     welcome: 'Welcome to Masar',
@@ -388,6 +391,11 @@ const en = {
     changeNumber: 'Use a different number',
     invalidPhone: 'Enter a valid mobile number',
     invalidCode: 'That code didn’t work. Try again.',
+    demoTitle: 'Demo mode',
+    demoBody: 'This test version runs in your browser with sample data. Tap an account to sign in (password: {{password}}).',
+    demoHost: 'Host',
+    demoWalker: 'Walker',
+    demoUnavailable: 'Not available in demo mode.',
   },
   errors: {
     generic: 'Please try again in a moment.',

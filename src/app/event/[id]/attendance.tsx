@@ -1,5 +1,5 @@
 import { useLocalSearchParams } from 'expo-router';
-import { Alert, FlatList, Pressable, StyleSheet, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { Avatar, EmptyView, ErrorView, Icon, LoadingView, Row, Text } from '@/components/ui';
@@ -8,6 +8,7 @@ import { useApplicants, useMarkAttendance } from '@/features/applications/hooks'
 import { useEvent } from '@/features/events/hooks';
 import { errorKey } from '@/lib/errors';
 import { useTheme } from '@/theme/ThemeProvider';
+import { showAlert } from '@/lib/dialogs';
 
 /** Host check-in list: mark each approved walker as attended or no-show. */
 export default function AttendanceScreen() {
@@ -27,7 +28,7 @@ export default function AttendanceScreen() {
   const present = list.filter((a) => a.status === 'attended').length;
 
   const set = (a: Applicant, attended: boolean) =>
-    mark.mutate({ applicationId: a.id, attended }, { onError: (e) => Alert.alert(t('common.somethingWrong'), t(errorKey(e))) });
+    mark.mutate({ applicationId: a.id, attended }, { onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))) });
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>

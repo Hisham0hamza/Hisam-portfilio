@@ -1,7 +1,7 @@
 import { Image } from 'expo-image';
 import { Stack, router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
-import { Alert, Dimensions, FlatList, Pressable, ScrollView, Share, StyleSheet, View } from 'react-native';
+import { Dimensions, FlatList, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
@@ -39,8 +39,9 @@ import { useProfileStats } from '@/features/profiles/hooks';
 import { useCanReview, useEventReviews } from '@/features/reviews/hooks';
 import { useIsSaved, useToggleSaved } from '@/features/saved/hooks';
 import { errorKey } from '@/lib/errors';
-import { eventShareUrl } from '@/lib/share';
+import { eventShareUrl, shareLink } from '@/lib/share';
 import { useTheme } from '@/theme/ThemeProvider';
+import { confirmAction, showAlert } from '@/lib/dialogs';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -77,8 +78,10 @@ function EventContent({ event }: { event: EventDetail }) {
   const photos = [event.cover_url, ...event.photos.map((p) => p.url)].filter((u): u is string => Boolean(u));
   const [photoIndex, setPhotoIndex] = useState(0);
 
-  const onShare = () =>
-    Share.share({ message: `${event.title} · ${l.date(event.start_at)}\n${eventShareUrl(event.id)}`, url: eventShareUrl(event.id) }).catch(() => undefined);
+  const onShare = async () => {
+    const result = await shareLink(`${event.title} · ${l.date(event.start_at)}`, eventShareUrl(event.id));
+    if (result === 'copied') showAlert(t('event.linkCopied'));
+  };
 
   const onSave = () =>
     requireAuth(() =>
@@ -354,23 +357,23 @@ function ApplyFooter({
       onSuccess: (app) => {
         setSheetOpen(false);
         setMessage('');
-        Alert.alert(
+        showAlert(
           app.status === 'approved' ? t('apply.approvedTitle') : t('apply.pendingTitle'),
           app.status === 'approved' ? t('apply.approvedBody') : t('apply.pendingBody'),
         );
       },
-      onError: (e) => Alert.alert(t('apply.failed'), t(errorKey(e))),
+      onError: (e) => showAlert(t('apply.failed'), t(errorKey(e))),
     });
 
   const confirmCancel = () =>
-    Alert.alert(t('apply.cancelTitle'), t('apply.cancelBody'), [
-      { text: t('common.no'), style: 'cancel' },
-      {
-        text: t('apply.cancelConfirm'),
-        style: 'destructive',
-        onPress: () => cancel.mutate(undefined, { onError: (e) => Alert.alert(t('common.somethingWrong'), t(errorKey(e))) }),
-      },
-    ]);
+    confirmAction({
+      title: t('apply.cancelTitle'),
+      message: t('apply.cancelBody'),
+      cancelLabel: t('common.no'),
+      confirmLabel: t('apply.cancelConfirm'),
+      destructive: true,
+      onConfirm: () => cancel.mutate(undefined, { onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))) }),
+    });
 
   let primary: React.ReactNode;
   switch (state) {
@@ -458,14 +461,14 @@ function HostActions({ event }: { event: EventDetail }) {
   const open = event.status === 'published' || event.status === 'draft';
 
   const confirmCancel = () =>
-    Alert.alert(t('host.cancelEventTitle'), t('host.cancelEventBody'), [
-      { text: t('common.no'), style: 'cancel' },
-      {
-        text: t('host.cancelEvent'),
-        style: 'destructive',
-        onPress: () => actions.cancel.mutate(undefined, { onError: (e) => Alert.alert(t('common.somethingWrong'), t(errorKey(e))) }),
-      },
-    ]);
+    confirmAction({
+      title: t('host.cancelEventTitle'),
+      message: t('host.cancelEventBody'),
+      cancelLabel: t('common.no'),
+      confirmLabel: t('host.cancelEvent'),
+      destructive: true,
+      onConfirm: () => actions.cancel.mutate(undefined, { onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))) }),
+    });
 
   return (
     <Section title={t('host.manage')}>
@@ -480,7 +483,7 @@ function HostActions({ event }: { event: EventDetail }) {
             title={t('host.markCompleted')}
             icon="flag-outline"
             loading={actions.complete.isPending}
-            onPress={() => actions.complete.mutate(undefined, { onError: (e) => Alert.alert(t('common.somethingWrong'), t(errorKey(e))) })}
+            onPress={() => actions.complete.mutate(undefined, { onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))) })}
           />
         ) : null}
         {open ? <Button title={t('host.cancelEvent')} icon="close-circle-outline" variant="danger" loading={actions.cancel.isPending} onPress={confirmCancel} /> : null}

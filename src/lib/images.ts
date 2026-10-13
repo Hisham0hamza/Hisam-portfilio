@@ -2,6 +2,7 @@ import { decode } from 'base64-arraybuffer';
 import { ImageManipulator, SaveFormat } from 'expo-image-manipulator';
 import * as ImagePicker from 'expo-image-picker';
 
+import { env } from './env';
 import { supabase } from './supabase';
 
 export type PickedImage = { uri: string; width: number; height: number };
@@ -34,8 +35,11 @@ export async function compressImage(uri: string, maxSize = 1600) {
 
 /** Compresses then uploads an image to `<bucket>/<userId>/<random>.jpg`; returns its public URL. */
 export async function uploadImage(bucket: Bucket, userId: string, uri: string, maxSize = 1600) {
-  const compressed = await compressImage(uri, maxSize);
+  // Demo images live in browser storage, so keep them small.
+  const compressed = await compressImage(uri, env.isDemo ? Math.min(maxSize, 900) : maxSize);
   if (!compressed.base64) throw new Error('compression_failed');
+  // Demo mode keeps images inline (stored with the demo data in the browser).
+  if (env.isDemo) return `data:image/jpeg;base64,${compressed.base64}`;
   const path = `${userId}/${Date.now()}-${Math.random().toString(36).slice(2, 10)}.jpg`;
   const { error } = await supabase.storage.from(bucket).upload(path, decode(compressed.base64), {
     contentType: 'image/jpeg',

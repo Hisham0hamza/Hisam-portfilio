@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { Alert, Pressable, View } from 'react-native';
+import { Pressable, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { Avatar, Button, Chip, Icon, LoadingView, Row, Screen, Text, TextField } from '@/components/ui';
@@ -13,6 +13,7 @@ import { toggleIn } from '@/features/search/filters';
 import { errorKey } from '@/lib/errors';
 import { pickImages } from '@/lib/images';
 import { useTheme } from '@/theme/ThemeProvider';
+import { showAlert } from '@/lib/dialogs';
 
 export default function EditProfileScreen() {
   const profile = useMyProfile();
@@ -47,7 +48,7 @@ function EditProfileForm({ profile }: { profile: Profile }) {
     setErrors({});
     update.mutate(
       { values: parsed.data, avatarUri },
-      { onSuccess: () => router.back(), onError: (e) => Alert.alert(t('common.somethingWrong'), t(errorKey(e))) },
+      { onSuccess: () => router.back(), onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))) },
     );
   };
 

@@ -1,6 +1,6 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
-import { Alert, FlatList, RefreshControl, View } from 'react-native';
+import { FlatList, RefreshControl, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { Avatar, Badge, Button, Card, EmptyView, ErrorView, LoadingView, Row, SegmentedControl, Text } from '@/components/ui';
@@ -11,6 +11,7 @@ import { useEvent } from '@/features/events/hooks';
 import { useLabels } from '@/features/events/useLabels';
 import { errorKey } from '@/lib/errors';
 import { useTheme } from '@/theme/ThemeProvider';
+import { showAlert } from '@/lib/dialogs';
 
 type Tab = 'pending' | 'approved' | 'other';
 
@@ -75,7 +76,7 @@ function ApplicantRow({ applicant, eventId, full }: { applicant: Applicant; even
     decide.mutate(
       { applicationId: applicant.id, approve },
       {
-        onError: (e) => Alert.alert(t('common.somethingWrong'), t(errorKey(e))),
+        onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))),
         onSettled: () => setBusy(null),
       },
     );

@@ -16,11 +16,17 @@ import {
   type EventFormValues,
   type EventStatus,
 } from './schemas';
+import * as demo from '@/features/demo/api';
+import { env } from '@/lib/env';
 
 // ---------------------------------------------------------------------------
 // Discovery
 // ---------------------------------------------------------------------------
 export async function searchEvents(filters: SearchFilters, ctx: SearchContext) {
+  if (env.isDemo) {
+    const rows = z.array(eventSummarySchema).parse(await demo.searchEvents(filters, ctx));
+    return { rows, total: rows[0]?.total_count ?? 0 };
+  }
   const payload = toRpcFilters(filters, ctx);
   const data = unwrap(await supabase.rpc('search_events', { filters: payload }));
   const rows = z.array(eventSummarySchema).parse(data ?? []);
@@ -28,6 +34,7 @@ export async function searchEvents(filters: SearchFilters, ctx: SearchContext) {
 }
 
 export async function getCities() {
+  if (env.isDemo) return demo.getCities();
   const data = unwrap(await supabase.from('cities').select('slug, name_en, name_ar').order('sort_order'));
   return z.array(citySchema).parse(data);
 }
@@ -36,6 +43,7 @@ export async function getCities() {
 // Event page
 // ---------------------------------------------------------------------------
 export async function getEvent(id: string) {
+  if (env.isDemo) return demo.getEvent(id);
   const data = unwrap(
     await supabase
       .from('events')
@@ -54,6 +62,7 @@ const attendeeSchema = z.object({ user_id: z.string(), name: z.string(), avatar_
 export type Attendee = z.infer<typeof attendeeSchema>;
 
 export async function getAttendees(eventId: string) {
+  if (env.isDemo) return demo.getAttendees(eventId);
   const data = unwrap(await supabase.rpc('event_attendees', { p_event_id: eventId }));
   return z.array(attendeeSchema).parse(data ?? []);
 }
@@ -62,6 +71,7 @@ export async function getAttendees(eventId: string) {
 // Hosting
 // ---------------------------------------------------------------------------
 export async function getHostedEvents(hostId: string, statuses?: EventStatus[]) {
+  if (env.isDemo) return demo.getHostedEvents(hostId, statuses);
   let q = supabase.from('events').select(EVENT_LIST_SELECT).eq('host_id', hostId).order('start_at', { ascending: false });
   if (statuses) q = q.in('status', statuses);
   return z.array(eventListItemSchema).parse(unwrap(await q));
@@ -85,6 +95,7 @@ export async function saveEvent(params: {
 
   const coverUrl = v.cover ? await resolvePhoto(hostId, v.cover) : null;
   const galleryUrls = await Promise.all(v.gallery.map((p) => resolvePhoto(hostId, p)));
+  if (env.isDemo) return demo.saveEvent({ ...params, coverUrl, galleryUrls });
 
   const row = {
     title: v.title,
@@ -147,13 +158,16 @@ export async function saveEvent(params: {
 }
 
 export async function cancelEvent(eventId: string) {
+  if (env.isDemo) return demo.cancelEvent(eventId);
   unwrap(await supabase.rpc('cancel_event', { p_event_id: eventId }));
 }
 
 export async function completeEvent(eventId: string) {
+  if (env.isDemo) return demo.completeEvent(eventId);
   unwrap(await supabase.rpc('complete_event', { p_event_id: eventId }));
 }
 
 export async function deleteDraft(eventId: string) {
+  if (env.isDemo) return demo.deleteDraft(eventId);
   unwrap(await supabase.from('events').delete().eq('id', eventId).eq('status', 'draft'));
 }

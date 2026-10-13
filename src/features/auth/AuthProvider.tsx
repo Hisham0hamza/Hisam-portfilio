@@ -1,12 +1,14 @@
-import type { Session, User } from '@supabase/supabase-js';
 import { useQueryClient } from '@tanstack/react-query';
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 
+import * as demo from '@/features/demo/api';
+import { env } from '@/lib/env';
 import { supabase } from '@/lib/supabase';
 
+export type AuthUser = { id: string; email?: string | null };
+
 type AuthValue = {
-  session: Session | null;
-  user: User | null;
+  user: AuthUser | null;
   /** True until the stored session has been restored. */
   loading: boolean;
   signOut: () => Promise<void>;
@@ -15,25 +17,40 @@ type AuthValue = {
 const AuthContext = createContext<AuthValue | null>(null);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [session, setSession] = useState<Session | null>(null);
+  const [user, setUser] = useState<AuthUser | null>(null);
   const [loading, setLoading] = useState(true);
   const queryClient = useQueryClient();
 
   useEffect(() => {
     let mounted = true;
+    // Per-user data (applications, saved events, profile) must be refetched on sign-in/out.
+    const changed = (next: AuthUser | null) => {
+      setUser(next);
+      queryClient.invalidateQueries();
+    };
+
+    if (env.isDemo) {
+      demo.auth
+        .currentUserId()
+        .then((id) => mounted && setUser(id ? { id } : null))
+        .finally(() => mounted && setLoading(false));
+      const off = demo.auth.onChange((id) => changed(id ? { id } : null));
+      return () => {
+        mounted = false;
+        off();
+      };
+    }
+
     supabase.auth
       .getSession()
       .then(({ data }) => {
-        if (mounted) setSession(data.session);
+        if (mounted) setUser(data.session?.user ?? null);
       })
       .finally(() => mounted && setLoading(false));
 
     const { data } = supabase.auth.onAuthStateChange((event, next) => {
-      setSession(next);
-      if (event === 'SIGNED_OUT' || event === 'SIGNED_IN') {
-        // Per-user data (applications, saved events, profile) must be refetched.
-        queryClient.invalidateQueries();
-      }
+      if (event === 'SIGNED_OUT' || event === 'SIGNED_IN') changed(next?.user ?? null);
+      else setUser(next?.user ?? null);
     });
     return () => {
       mounted = false;
@@ -43,14 +60,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<AuthValue>(
     () => ({
-      session,
-      user: session?.user ?? null,
+      user,
       loading,
       signOut: async () => {
-        await supabase.auth.signOut();
+        if (env.isDemo) await demo.auth.signOut();
+        else await supabase.auth.signOut();
       },
     }),
-    [session, loading],
+    [user, loading],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

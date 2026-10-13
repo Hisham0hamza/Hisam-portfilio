@@ -1,5 +1,6 @@
+import { useQueryClient } from '@tanstack/react-query';
 import { router } from 'expo-router';
-import { Alert, View } from 'react-native';
+import { View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { ProfileHeader } from '@/components/profile/ProfileHeader';
@@ -7,15 +8,19 @@ import { SignInPrompt } from '@/components/SignInPrompt';
 import { Button, Card, ErrorView, LoadingView, Screen, Section, SegmentedControl, Text } from '@/components/ui';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { useMyProfile } from '@/features/profiles/hooks';
+import { resetDemo } from '@/features/demo/store';
 import { changeLanguage } from '@/i18n';
+import { env } from '@/lib/env';
 import type { AppLanguage } from '@/lib/format';
 import { useTheme, type ThemePreference } from '@/theme/ThemeProvider';
+import { confirmAction } from '@/lib/dialogs';
 
 export default function ProfileTab() {
   const { t, i18n } = useTranslation();
   const { user, signOut } = useAuth();
   const { spacing, preference, setPreference } = useTheme();
   const profile = useMyProfile();
+  const queryClient = useQueryClient();
 
   const settings = (
     <Section title={t('settings.title')}>
@@ -26,10 +31,13 @@ export default function ProfileTab() {
         value={i18n.language === 'ar' ? 'ar' : 'en'}
         onChange={(lang) => {
           if (lang === i18n.language) return;
-          Alert.alert(t('settings.languageChangeTitle'), t('settings.languageChangeBody'), [
-            { text: t('common.cancel'), style: 'cancel' },
-            { text: t('common.ok'), onPress: () => changeLanguage(lang) },
-          ]);
+          confirmAction({
+      title: t('settings.languageChangeTitle'),
+      message: t('settings.languageChangeBody'),
+      cancelLabel: t('common.cancel'),
+      confirmLabel: t('common.ok'),
+      onConfirm: () => changeLanguage(lang),
+    });
         }}
         options={[
           { value: 'ar', label: 'العربية' },
@@ -48,6 +56,26 @@ export default function ProfileTab() {
           { value: 'dark', label: t('settings.dark') },
         ]}
       />
+      {env.isDemo ? (
+        <Button
+          title={t('settings.resetDemo')}
+          variant="ghost"
+          icon="refresh"
+          onPress={() =>
+            confirmAction({
+              title: t('settings.resetDemo'),
+              message: t('settings.resetDemoBody'),
+              cancelLabel: t('common.cancel'),
+              confirmLabel: t('common.ok'),
+              destructive: true,
+              onConfirm: async () => {
+                await resetDemo();
+                queryClient.invalidateQueries();
+              },
+            })
+          }
+        />
+      ) : null}
     </Section>
   );
 

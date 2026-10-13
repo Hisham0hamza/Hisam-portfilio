@@ -4,6 +4,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Platform, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { AuthProvider, useAuth } from '@/features/auth/AuthProvider';
@@ -61,6 +62,7 @@ function Navigation() {
   return (
     <NavThemeProvider value={navTheme}>
       <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
+      <WebFrame>
       <Stack
         screenOptions={{
           headerTintColor: colors.primary,
@@ -84,6 +86,18 @@ function Navigation() {
         <Stack.Screen name="phone" options={{ title: t('auth.phoneTitle'), presentation: 'modal' }} />
         <Stack.Screen name="auth/callback" options={{ headerShown: false }} />
       </Stack>
+      </WebFrame>
     </NavThemeProvider>
+  );
+}
+
+/** On wide browser windows, show the app as a centred phone-width column. */
+function WebFrame({ children }: { children: React.ReactNode }) {
+  const { colors } = useTheme();
+  if (Platform.OS !== 'web') return <>{children}</>;
+  return (
+    <View style={{ flex: 1, backgroundColor: colors.surfaceAlt, alignItems: 'center' }}>
+      <View style={{ flex: 1, width: '100%', maxWidth: 520, backgroundColor: colors.background, overflow: 'hidden' }}>{children}</View>
+    </View>
   );
 }

@@ -2,6 +2,8 @@ import * as Linking from 'expo-linking';
 import * as WebBrowser from 'expo-web-browser';
 import { z } from 'zod';
 
+import * as demo from '@/features/demo/api';
+import { env } from '@/lib/env';
 import { supabase } from '@/lib/supabase';
 
 WebBrowser.maybeCompleteAuthSession();
@@ -22,11 +24,16 @@ export function normalizePhone(input: string) {
 }
 
 export async function signInWithEmail(email: string, password: string) {
+  if (env.isDemo) return demo.auth.signIn(email, password);
   const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
   if (error) throw error;
 }
 
 export async function signUpWithEmail(name: string, email: string, password: string) {
+  if (env.isDemo) {
+    await demo.auth.signUp(name, email, password);
+    return { needsConfirmation: false };
+  }
   const { data, error } = await supabase.auth.signUp({
     email: email.trim(),
     password,

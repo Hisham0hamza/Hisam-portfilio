@@ -157,6 +157,7 @@ const ar: Translation = {
   event: {
     notFound: 'هذه الفعالية غير متاحة.',
     share: 'مشاركة',
+    linkCopied: 'تم نسخ الرابط',
     save: 'حفظ',
     unsave: 'إزالة من المحفوظات',
     hostedBy: 'المنظم',
@@ -356,6 +357,8 @@ const ar: Translation = {
     system: 'النظام',
     light: 'فاتح',
     dark: 'داكن',
+    resetDemo: 'إعادة ضبط البيانات التجريبية',
+    resetDemoBody: 'سيتم حذف كل ما أنشأته في هذا المتصفح من فعاليات وطلبات وتقييمات.',
   },
   auth: {
     welcome: 'أهلاً بك في مسار',
@@ -390,6 +393,11 @@ const ar: Translation = {
     changeNumber: 'استخدم رقماً آخر',
     invalidPhone: 'أدخل رقم موبايل صحيحاً',
     invalidCode: 'الرمز غير صحيح. حاول مرة أخرى.',
+    demoTitle: 'وضع التجربة',
+    demoBody: 'هذه النسخة التجريبية تعمل في متصفحك ببيانات تجريبية. اضغط على حساب لتسجيل الدخول (كلمة المرور: {{password}}).',
+    demoHost: 'منظم',
+    demoWalker: 'مشارك',
+    demoUnavailable: 'غير متاح في وضع التجربة.',
   },
   errors: {
     generic: 'من فضلك حاول مرة أخرى بعد قليل.',

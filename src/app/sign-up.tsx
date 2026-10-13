@@ -1,12 +1,12 @@
 import { Link, router } from 'expo-router';
 import { useState } from 'react';
-import { Alert } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { z } from 'zod';
 
 import { Button, Screen, Text, TextField } from '@/components/ui';
 import { emailSchema, passwordSchema, signUpWithEmail } from '@/features/auth/api';
 import { useTheme } from '@/theme/ThemeProvider';
+import { showAlert } from '@/lib/dialogs';
 
 const schema = z.object({ name: z.string().trim().min(2), email: emailSchema, password: passwordSchema });
 
@@ -35,14 +35,14 @@ export default function SignUpScreen() {
     try {
       const { needsConfirmation } = await signUpWithEmail(parsed.data.name, parsed.data.email, parsed.data.password);
       if (needsConfirmation) {
-        Alert.alert(t('auth.checkEmailTitle'), t('auth.checkEmailBody'));
+        showAlert(t('auth.checkEmailTitle'), t('auth.checkEmailBody'));
         router.replace('/sign-in');
       } else {
         if (router.canGoBack()) router.back();
         else router.replace('/');
       }
     } catch (e) {
-      Alert.alert(t('auth.signUpFailed'), (e as Error).message);
+      showAlert(t('auth.signUpFailed'), (e as Error).message);
     } finally {
       setBusy(false);
     }

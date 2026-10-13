@@ -3,6 +3,8 @@ import { z } from 'zod';
 import { unwrap } from '@/lib/errors';
 import { uploadImage } from '@/lib/images';
 import { supabase } from '@/lib/supabase';
+import * as demo from '@/features/demo/api';
+import { env } from '@/lib/env';
 
 export const profileSchema = z.object({
   id: z.string(),
@@ -27,6 +29,7 @@ export const profileStatsSchema = z.object({
 export type ProfileStats = z.infer<typeof profileStatsSchema>;
 
 export async function getProfile(id: string) {
+  if (env.isDemo) return demo.getProfile(id);
   const data = unwrap(
     await supabase
       .from('profiles')
@@ -38,6 +41,7 @@ export async function getProfile(id: string) {
 }
 
 export async function getProfileStats(id: string) {
+  if (env.isDemo) return demo.getProfileStats(id);
   const data = unwrap(await supabase.rpc('profile_stats', { p_user_id: id }));
   const row = Array.isArray(data) ? data[0] : data;
   return profileStatsSchema.parse(row ?? { events_attended: 0, events_hosted: 0, rating_avg: null, rating_count: 0 });
@@ -69,6 +73,7 @@ export type ProfileFormValues = z.infer<typeof profileFormSchema>;
 
 export async function updateProfile(id: string, values: ProfileFormValues, avatarUri?: string | null) {
   const avatar_url = avatarUri ? await uploadImage('avatars', id, avatarUri, 600) : undefined;
+  if (env.isDemo) return demo.updateProfile(id, values, avatar_url);
   unwrap(
     await supabase
       .from('profiles')

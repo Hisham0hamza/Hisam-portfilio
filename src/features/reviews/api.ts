@@ -2,6 +2,8 @@ import { z } from 'zod';
 
 import { unwrap } from '@/lib/errors';
 import { supabase } from '@/lib/supabase';
+import * as demo from '@/features/demo/api';
+import { env } from '@/lib/env';
 
 export const reviewSchema = z.object({
   id: z.string(),
@@ -18,6 +20,7 @@ const REVIEW_SELECT =
   'id, event_id, rating, comment, created_at, reviewer:profiles!reviews_reviewer_id_fkey ( id, name, avatar_url ), event:events ( id, title )';
 
 export async function getEventReviews(eventId: string) {
+  if (env.isDemo) return demo.getEventReviews(eventId);
   const data = unwrap(
     await supabase.from('reviews').select(REVIEW_SELECT).eq('event_id', eventId).order('created_at', { ascending: false }),
   );
@@ -25,6 +28,7 @@ export async function getEventReviews(eventId: string) {
 }
 
 export async function getHostReviews(hostId: string) {
+  if (env.isDemo) return demo.getHostReviews(hostId);
   const data = unwrap(
     await supabase
       .from('reviews')
@@ -37,6 +41,7 @@ export async function getHostReviews(hostId: string) {
 }
 
 export async function canReview(eventId: string) {
+  if (env.isDemo) return demo.canReview(eventId);
   return Boolean(unwrap(await supabase.rpc('can_review', { p_event_id: eventId })));
 }
 
@@ -47,6 +52,7 @@ export const reviewFormSchema = z.object({
 export type ReviewFormValues = z.infer<typeof reviewFormSchema>;
 
 export async function getMyReview(eventId: string, reviewerId: string) {
+  if (env.isDemo) return demo.getMyReview(eventId, reviewerId);
   const data = unwrap(
     await supabase.from('reviews').select(REVIEW_SELECT).eq('event_id', eventId).eq('reviewer_id', reviewerId).maybeSingle(),
   );
@@ -54,6 +60,7 @@ export async function getMyReview(eventId: string, reviewerId: string) {
 }
 
 export async function submitReview(eventId: string, reviewerId: string, values: ReviewFormValues, existingId?: string) {
+  if (env.isDemo) return demo.submitReview(eventId, reviewerId, values, existingId);
   const fields = { rating: values.rating, comment: values.comment || null };
   if (existingId) {
     unwrap(await supabase.from('reviews').update(fields).eq('id', existingId));

@@ -3,9 +3,18 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
-import { Button, Divider, Row, Screen, Text, TextField } from '@/components/ui';
+import { Button, Card, Divider, Row, Screen, Text, TextField } from '@/components/ui';
+import { DEMO_PASSWORD } from '@/features/demo/store';
 import { emailSchema, signInWithEmail, signInWithGoogle } from '@/features/auth/api';
+import { env } from '@/lib/env';
 import { useTheme } from '@/theme/ThemeProvider';
+
+const DEMO_ACCOUNTS = [
+  { email: 'nour@masar.demo', name: 'Nour El-Din Hassan', role: 'host' },
+  { email: 'salma@masar.demo', name: 'Salma Adel', role: 'host' },
+  { email: 'ahmed@masar.demo', name: 'Ahmed Samir', role: 'walker' },
+  { email: 'laila@masar.demo', name: 'Laila Hamdy', role: 'walker' },
+] as const;
 
 export default function SignInScreen() {
   const { t } = useTranslation();
@@ -34,6 +43,19 @@ export default function SignInScreen() {
     }
   };
 
+  const quickSignIn = async (demoEmail: string) => {
+    setBusy('email');
+    setError(null);
+    try {
+      await signInWithEmail(demoEmail, DEMO_PASSWORD);
+      done();
+    } catch {
+      setError(t('auth.invalidCredentials'));
+    } finally {
+      setBusy(null);
+    }
+  };
+
   const onGoogle = async () => {
     setBusy('google');
     setError(null);
@@ -52,8 +74,31 @@ export default function SignInScreen() {
         <Text variant="display">{t('auth.welcome')}</Text>
         <Text color="textMuted">{t('auth.tagline')}</Text>
       </View>
-      <Button title={t('auth.continueWithGoogle')} icon="logo-google" variant="ghost" loading={busy === 'google'} onPress={onGoogle} />
-      <Button title={t('auth.continueWithPhone')} icon="phone-portrait-outline" variant="ghost" onPress={() => router.push('/phone')} />
+      {env.isDemo ? (
+        <Card>
+          <View style={{ gap: spacing.md }}>
+            <Text variant="bodyStrong">{t('auth.demoTitle')}</Text>
+            <Text variant="caption" color="textMuted">
+              {t('auth.demoBody', { password: DEMO_PASSWORD })}
+            </Text>
+            {DEMO_ACCOUNTS.map((a) => (
+              <Button
+                key={a.email}
+                variant="secondary"
+                size="sm"
+                title={`${a.name} · ${a.role === 'host' ? t('auth.demoHost') : t('auth.demoWalker')}`}
+                disabled={busy !== null}
+                onPress={() => quickSignIn(a.email)}
+              />
+            ))}
+          </View>
+        </Card>
+      ) : (
+        <>
+          <Button title={t('auth.continueWithGoogle')} icon="logo-google" variant="ghost" loading={busy === 'google'} onPress={onGoogle} />
+          <Button title={t('auth.continueWithPhone')} icon="phone-portrait-outline" variant="ghost" onPress={() => router.push('/phone')} />
+        </>
+      )}
       <Row gap={spacing.md}>
         <View style={{ flex: 1 }}>
           <Divider />

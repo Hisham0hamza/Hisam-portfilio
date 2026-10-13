@@ -1,6 +1,5 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
-import { Alert } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { Button, EmptyView, LoadingView, Screen, StarsInput, Text, TextField } from '@/components/ui';
@@ -8,6 +7,7 @@ import { useEvent } from '@/features/events/hooks';
 import { reviewFormSchema, type Review } from '@/features/reviews/api';
 import { useCanReview, useMyReview, useSubmitReview } from '@/features/reviews/hooks';
 import { errorKey } from '@/lib/errors';
+import { showAlert } from '@/lib/dialogs';
 
 export default function ReviewScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -39,7 +39,7 @@ function ReviewForm({ eventId, title, hostName, existing }: { eventId: string; t
       { values: parsed.data, existingId: existing?.id },
       {
         onSuccess: () => router.back(),
-        onError: (e) => Alert.alert(t('common.somethingWrong'), t(errorKey(e))),
+        onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))),
       },
     );
   };

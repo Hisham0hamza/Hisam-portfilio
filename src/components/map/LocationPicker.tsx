@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, FlatList, Modal, Pressable, StyleSheet, TextInput, View } from 'react-native';
-import MapView from 'react-native-maps';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
@@ -8,6 +7,8 @@ import { Button, Icon, IconButton, Text } from '@/components/ui';
 import { reverseGeocode, searchPlaces, type Place } from '@/lib/geocoding';
 import { CAIRO, type Region } from '@/lib/geo';
 import { useTheme } from '@/theme/ThemeProvider';
+
+import { PickerMap, type PickerMapHandle } from './PickerMap';
 
 export type PickedLocation = { lat: number; lng: number; address: string | null; name?: string };
 
@@ -27,9 +28,9 @@ export function LocationPicker({
   onClose: () => void;
   onPick: (loc: PickedLocation) => void;
 }) {
-  const { colors, radius, spacing, typography, scheme } = useTheme();
+  const { colors, radius, spacing, typography } = useTheme();
   const { t, i18n } = useTranslation();
-  const mapRef = useRef<MapView>(null);
+  const mapRef = useRef<PickerMapHandle>(null);
   const startRegion: Region = initial
     ? { latitude: initial.lat, longitude: initial.lng, latitudeDelta: 0.01, longitudeDelta: 0.01 }
     : CAIRO;
@@ -67,7 +68,7 @@ export function LocationPicker({
     setChosen(true);
     setQuery(p.name);
     setPlaceName(p.address);
-    mapRef.current?.animateToRegion({ latitude: p.lat, longitude: p.lng, latitudeDelta: 0.006, longitudeDelta: 0.006 }, 350);
+    mapRef.current?.flyTo(p.lat, p.lng);
   };
 
   const confirm = async () => {
@@ -127,16 +128,11 @@ export function LocationPicker({
           ) : null}
         </View>
         <View style={{ flex: 1, marginTop: spacing.md }}>
-          <MapView
+          <PickerMap
             ref={mapRef}
-            style={StyleSheet.absoluteFill}
             initialRegion={startRegion}
-            userInterfaceStyle={scheme}
-            showsUserLocation
-            onRegionChangeComplete={(r) => {
-              setCenter({ lat: r.latitude, lng: r.longitude });
-            }}
-            onPanDrag={() => setPlaceName(undefined)}
+            onCenterChange={setCenter}
+            onUserDrag={() => setPlaceName(undefined)}
           />
           <View pointerEvents="none" style={styles.centerPin}>
             <Icon name="location" size={44} color="accent" />

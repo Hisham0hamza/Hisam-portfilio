@@ -65,7 +65,7 @@ export function Sheet({
 
 const styles = StyleSheet.create({
   root: { flex: 1, justifyContent: 'flex-end' },
-  sheet: { maxHeight: '92%' },
+  sheet: { maxHeight: '92%', width: '100%', maxWidth: 520, alignSelf: 'center' },
   handle: { alignSelf: 'center', width: 40, height: 4, borderRadius: 2, marginTop: 8 },
   header: { flexDirection: 'row', alignItems: 'center', minHeight: 52 },
   title: { flex: 1 },

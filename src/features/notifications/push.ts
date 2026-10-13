@@ -8,14 +8,16 @@ import { Platform } from 'react-native';
 import { env } from '@/lib/env';
 import { supabase } from '@/lib/supabase';
 
-Notifications.setNotificationHandler({
+if (Platform.OS !== 'web') {
+  Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldShowBanner: true,
     shouldShowList: true,
     shouldPlaySound: true,
     shouldSetBadge: false,
   }),
-});
+  });
+}
 
 function projectId() {
   return (
@@ -67,10 +69,11 @@ export async function registerForPushNotifications(userId: string, locale: strin
 /** Registers the device when signed in and opens the related event when a notification is tapped. */
 export function usePushNotifications(userId: string | null | undefined, locale: string) {
   useEffect(() => {
-    if (userId) registerForPushNotifications(userId, locale);
+    if (userId && !env.isDemo) registerForPushNotifications(userId, locale);
   }, [userId, locale]);
 
   useEffect(() => {
+    if (Platform.OS === 'web') return;
     const open = (response: Notifications.NotificationResponse | null) => {
       const eventId = response?.notification.request.content.data?.eventId;
       if (typeof eventId === 'string') router.push(`/event/${eventId}`);

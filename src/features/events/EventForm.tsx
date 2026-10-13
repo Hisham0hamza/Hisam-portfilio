@@ -1,7 +1,7 @@
 import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Alert, Pressable, StyleSheet, View } from 'react-native';
+import { Pressable, StyleSheet, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { LocationPicker } from '@/components/map/LocationPicker';
@@ -23,6 +23,7 @@ import {
 import { errorKey } from '@/lib/errors';
 import { pickImages } from '@/lib/images';
 import { useTheme } from '@/theme/ThemeProvider';
+import { showAlert } from '@/lib/dialogs';
 
 import { useCities, useSaveEvent } from './hooks';
 import {
@@ -199,7 +200,7 @@ export function EventForm({ event }: { event?: EventDetail }) {
     }
     setErrors(next);
     if (Object.keys(next).length || !parsed.success) {
-      Alert.alert(t('form.fixErrorsTitle'), t('form.fixErrorsBody'));
+      showAlert(t('form.fixErrorsTitle'), t('form.fixErrorsBody'));
       return;
     }
 
@@ -213,7 +214,7 @@ export function EventForm({ event }: { event?: EventDetail }) {
         },
         onError: (e) => {
           setSavingAs(null);
-          Alert.alert(t('form.saveFailed'), t(errorKey(e)));
+          showAlert(t('form.saveFailed'), t(errorKey(e)));
         },
       },
     );

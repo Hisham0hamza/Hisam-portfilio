@@ -3,6 +3,8 @@ import { z } from 'zod';
 import { EVENT_LIST_SELECT, applicationStatusSchema, eventListItemSchema } from '@/features/events/schemas';
 import { unwrap } from '@/lib/errors';
 import { supabase } from '@/lib/supabase';
+import * as demo from '@/features/demo/api';
+import { env } from '@/lib/env';
 
 export const applicationSchema = z.object({
   id: z.string(),
@@ -16,6 +18,7 @@ export const applicationSchema = z.object({
 export type Application = z.infer<typeof applicationSchema>;
 
 export async function getMyApplication(eventId: string, userId: string) {
+  if (env.isDemo) return demo.getMyApplication(eventId, userId);
   const data = unwrap(
     await supabase
       .from('applications')
@@ -28,22 +31,26 @@ export async function getMyApplication(eventId: string, userId: string) {
 }
 
 export async function applyToEvent(eventId: string, message: string | null) {
+  if (env.isDemo) return demo.applyToEvent(eventId, message);
   return applicationSchema.parse(
     unwrap(await supabase.rpc('apply_to_event', { p_event_id: eventId, p_message: message })),
   );
 }
 
 export async function cancelApplication(eventId: string) {
+  if (env.isDemo) return demo.cancelApplication(eventId);
   return applicationSchema.parse(unwrap(await supabase.rpc('cancel_application', { p_event_id: eventId })));
 }
 
 export async function decideApplication(applicationId: string, approve: boolean) {
+  if (env.isDemo) return demo.decideApplication(applicationId, approve);
   return applicationSchema.parse(
     unwrap(await supabase.rpc('decide_application', { p_application_id: applicationId, p_approve: approve })),
   );
 }
 
 export async function markAttendance(applicationId: string, attended: boolean) {
+  if (env.isDemo) return demo.markAttendance(applicationId, attended);
   return applicationSchema.parse(
     unwrap(await supabase.rpc('mark_attendance', { p_application_id: applicationId, p_attended: attended })),
   );
@@ -61,6 +68,7 @@ export const applicantSchema = applicationSchema.extend({
 export type Applicant = z.infer<typeof applicantSchema>;
 
 export async function getApplicants(eventId: string) {
+  if (env.isDemo) return demo.getApplicants(eventId);
   const data = unwrap(
     await supabase
       .from('applications')
@@ -76,6 +84,7 @@ export const tripSchema = applicationSchema.extend({ event: eventListItemSchema 
 export type Trip = z.infer<typeof tripSchema>;
 
 export async function getMyTrips(userId: string) {
+  if (env.isDemo) return demo.getMyTrips(userId);
   const data = unwrap(
     await supabase
       .from('applications')
@@ -88,6 +97,7 @@ export async function getMyTrips(userId: string) {
 
 /** Pending application counts per hosted event (badge on the Host tab). */
 export async function getPendingCounts(eventIds: string[]) {
+  if (env.isDemo) return demo.getPendingCounts(eventIds);
   if (!eventIds.length) return {} as Record<string, number>;
   const data = unwrap(
     await supabase.from('applications').select('event_id').in('event_id', eventIds).eq('status', 'pending'),

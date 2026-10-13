@@ -2,6 +2,8 @@
 
 Masar is a community app for group walks, heritage tours, nature trips and city trips in Egypt. Hosts publish events. Walkers find them on a map or in a list, filter them, and apply.
 
+**Try it in your browser:** https://hisham0hamza.github.io/Hisam-portfilio/ (demo mode: sample data stored in your browser; tap a demo account on the sign-in screen).
+
 **Status:** Phase 1 (MVP) is built. Phases 2–4 have reserved tables in the database (see [Roadmap](#roadmap)).
 
 | | |
@@ -150,6 +152,21 @@ Remote push needs a **development build** on Android (`npx expo run:android` or 
 - `EXPO_PUBLIC_SHARE_BASE_URL` turns share links into `https://…/event/<id>` (otherwise `masar://event/<id>`).
 
 ---
+
+## Web app
+
+The same codebase runs in the browser (React Native Web). Maps use Leaflet with OpenStreetMap/CARTO tiles, date fields use the browser's pickers, and dialogs use the browser's alert/confirm.
+
+```bash
+npx expo start --web                                                  # local dev
+WEB_BASE_URL=/Hisam-portfilio npx expo export --platform web          # static build in dist/
+```
+
+`.github/workflows/deploy-web.yml` builds and publishes it to GitHub Pages on every push.
+
+**Demo mode.** If Supabase isn't configured (no `EXPO_PUBLIC_SUPABASE_URL` / `EXPO_PUBLIC_SUPABASE_ANON_KEY`), the app runs on a built-in demo backend (`src/features/demo/`). It loads the seed data and keeps everything testers do in browser storage. It applies the same rules as the database functions: capacity, approvals, cancellations, and reviews only by attendees. Profile → Settings → *Reset demo data* starts over. Push notifications, phone and Google sign-in aren't available in demo mode.
+
+To point the hosted site at your Supabase project, add the repository secrets `EXPO_PUBLIC_SUPABASE_URL` and `EXPO_PUBLIC_SUPABASE_ANON_KEY` (Settings → Secrets and variables → Actions) and re-run the *Deploy web app* workflow. Also add `https://hisham0hamza.github.io/Hisam-portfilio/**` to Supabase → Authentication → Redirect URLs.
 
 ## Tests and checks
 

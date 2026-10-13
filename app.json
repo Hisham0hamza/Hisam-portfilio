@@ -13,7 +13,10 @@
       "supportsTablet": false,
       "infoPlist": {
         "CFBundleAllowMixedLocalizations": true,
-        "CFBundleLocalizations": ["en", "ar"]
+        "CFBundleLocalizations": [
+          "en",
+          "ar"
+        ]
       }
     },
     "android": {
@@ -25,11 +28,19 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
     },
     "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "output": "single",
+      "favicon": "./assets/images/favicon.png",
+      "name": "Masar · مسار",
+      "shortName": "Masar",
+      "themeColor": "#0F766E",
+      "backgroundColor": "#FBF8F3",
+      "lang": "ar"
     },
     "plugins": [
       "expo-router",
@@ -39,10 +50,17 @@
           "backgroundColor": "#FBF8F3",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76,
-          "dark": { "backgroundColor": "#0E1215" }
+          "dark": {
+            "backgroundColor": "#0E1215"
+          }
         }
       ],
-      ["expo-localization", { "supportsRTL": true }],
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true
+        }
+      ],
       [
         "expo-location",
         {
