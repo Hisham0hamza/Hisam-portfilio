@@ -106,7 +106,7 @@ function EventContent({ event }: { event: EventDetail }) {
     );
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <View style={{ flex: 1 }}>
       <Stack.Screen
         options={{
           headerRight: () => (

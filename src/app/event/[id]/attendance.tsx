@@ -31,7 +31,7 @@ export default function AttendanceScreen() {
     mark.mutate({ applicationId: a.id, attended }, { onError: (e) => showAlert(t('common.somethingWrong'), t(errorKey(e))) });
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <View style={{ flex: 1 }}>
       <View style={{ padding: spacing.lg, gap: spacing.xs }}>
         <Text variant="heading" accessibilityLiveRegion="polite">
           {t('host.checkedIn', { present, total: list.length })}

@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 
-import { Icon, type IconName } from '@/components/ui';
+import { Icon, PatternBackground, type IconName } from '@/components/ui';
 import { usePendingCounts } from '@/features/applications/hooks';
 import { useHostedEvents } from '@/features/events/hooks';
 import { useTheme } from '@/theme/ThemeProvider';
@@ -20,6 +20,7 @@ export default function TabsLayout() {
 
   return (
     <Tabs
+      screenLayout={({ children }) => <PatternBackground>{children}</PatternBackground>}
       screenOptions={{
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textMuted,

@@ -1,0 +1,27 @@
+name: Fetch event photos
+
+# Manually run: downloads freely licensed photos from Wikimedia Commons
+# (scripts/fetch-event-photos.mjs) and commits them to public/images/events/.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/fetch-event-photos.mjs
+      - name: Commit photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add public/images/events
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Add event photos from Wikimedia Commons"
+          git push

@@ -36,7 +36,7 @@ export default function HostScreen() {
   if (!user) return <SignInPrompt icon="flag-outline" message={t('host.signInMessage')} />;
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <View style={{ flex: 1 }}>
       <View style={{ padding: spacing.lg, gap: spacing.md }}>
         <Button title={t('host.createEvent')} icon="add-circle-outline" onPress={() => router.push('/event/new')} />
         <SegmentedControl<Tab>

@@ -41,7 +41,7 @@ export default function TripsScreen() {
   const query = tab === 'saved' ? saved : trips;
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <View style={{ flex: 1 }}>
       <View style={{ padding: spacing.lg }}>
         <SegmentedControl<Tab>
           value={tab}

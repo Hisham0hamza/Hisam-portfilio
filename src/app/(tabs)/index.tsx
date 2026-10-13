@@ -31,7 +31,7 @@ export default function ExploreScreen() {
   const [topInset, setTopInset] = useState(150);
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <View style={{ flex: 1 }}>
       {view === 'map' ? <MapMode location={location} topInset={topInset} /> : <ListMode location={location} topInset={topInset} />}
 
       <SafeAreaView

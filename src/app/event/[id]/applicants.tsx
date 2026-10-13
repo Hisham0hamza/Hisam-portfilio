@@ -35,7 +35,7 @@ export default function ApplicantsScreen() {
   const left = event.data ? seatsLeft(event.data.capacity, event.data.approved_count) : 0;
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <View style={{ flex: 1 }}>
       <View style={{ padding: spacing.lg, gap: spacing.md }}>
         {event.data ? (
           <Text variant="caption" color="textMuted" accessibilityLiveRegion="polite">

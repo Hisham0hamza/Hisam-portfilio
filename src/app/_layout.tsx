@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { Platform, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import { PatternBackground } from '@/components/ui';
 import { AuthProvider, useAuth } from '@/features/auth/AuthProvider';
 import { usePushNotifications } from '@/features/notifications/push';
 import { SearchProvider } from '@/features/search/SearchContext';
@@ -64,6 +65,7 @@ function Navigation() {
       <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
       <WebFrame>
       <Stack
+        screenLayout={({ children }) => <PatternBackground>{children}</PatternBackground>}
         screenOptions={{
           headerTintColor: colors.primary,
           headerTitleStyle: { color: colors.text },

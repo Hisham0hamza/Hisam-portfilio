@@ -18,7 +18,7 @@ export function Screen({ children, scroll, edges = ['top'], padded = true, conte
   const { colors, spacing } = useTheme();
   const padding = padded ? { padding: spacing.lg } : null;
   return (
-    <SafeAreaView edges={edges} style={[styles.flex, { backgroundColor: colors.background }]}>
+    <SafeAreaView edges={edges} style={styles.flex}>
       <KeyboardAvoidingView style={styles.flex} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
         {scroll ? (
           <ScrollView

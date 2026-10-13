@@ -12,3 +12,4 @@ export { EmptyView, ErrorView, LoadingView, QueryState } from './StateView';
 export { Text } from './Text';
 export { TextField } from './TextField';
 export { DateField } from './DateField';
+export { PatternBackground } from './PatternBackground';
