@@ -72,10 +72,10 @@ export const lightColors: ColorTokens = {
 };
 
 export const darkColors: ColorTokens = {
-  background: '#0E1215',
-  surface: '#171D22',
-  surfaceAlt: '#1F272E',
-  border: '#2C363F',
+  background: '#0B0B0C', // near-black
+  surface: '#18181B', // dark grey cards
+  surfaceAlt: '#232326',
+  border: '#34343A',
   text: '#EEF2F5',
   textMuted: palette.ink300,
   textOnPrimary: palette.teal900,

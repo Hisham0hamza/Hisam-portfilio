@@ -7,7 +7,7 @@ export const PATTERN_SIZE = 160;
 
 export const patternColors = {
   light: { line: '#B4441A', gold: '#C9952B', opacity: 0.16 },
-  dark: { line: '#5EEAD4', gold: '#D9A441', opacity: 0.11 },
+  dark: { line: '#D9A441', gold: '#E8B860', opacity: 0.14 },
 } as const;
 
 /** Five-point Egyptian star centred at (x, y). */
