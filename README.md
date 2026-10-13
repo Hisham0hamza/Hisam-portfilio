@@ -168,6 +168,11 @@ WEB_BASE_URL=/Hisam-portfilio npx expo export --platform web          # static b
 
 To point the hosted site at your Supabase project, add the repository secrets `EXPO_PUBLIC_SUPABASE_URL` and `EXPO_PUBLIC_SUPABASE_ANON_KEY` (Settings → Secrets and variables → Actions) and re-run the *Deploy web app* workflow. Also add `https://hisham0hamza.github.io/Hisam-portfilio/**` to Supabase → Authentication → Redirect URLs.
 
+## Design assets
+
+- **Background:** an original Pharaonic tile (lotus, papyrus, ankh, Eye of Horus, stars, Nile water lines) drawn in `src/theme/pattern.ts`. Web uses the SVG directly; native uses PNG tiles rendered by `node scripts/render-pattern.mjs`.
+- **Event photos:** freely licensed photos of each place from Wikimedia Commons in `public/images/events/`, with author and licence in [`CREDITS.md`](public/images/events/CREDITS.md). They're fetched by `scripts/fetch-event-photos.mjs`, which runs in GitHub Actions whenever the script changes. The site serves them from GitHub Pages, and the seed data points there.
+
 ## Tests and checks
 
 ```bash

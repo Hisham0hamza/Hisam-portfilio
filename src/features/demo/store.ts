@@ -1,6 +1,7 @@
 // In-browser demo backend: the seeded data plus everything testers do, persisted in
 // AsyncStorage (localStorage on web). Used when no Supabase project is configured.
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Platform } from 'react-native';
 
 import type {
   ApplicationStatus,
@@ -13,7 +14,18 @@ import type {
 import seed from './seed.json';
 
 export const DEMO_PASSWORD = 'masar-demo-123';
-const STORAGE_KEY = 'masar.demo.v1';
+const STORAGE_KEY = 'masar.demo.v2';
+
+/** Event photos ship with the web build (public/images/events, served by GitHub Pages). */
+const HOSTED_SITE = 'https://hisham0hamza.github.io/Hisam-portfilio';
+
+function assetUrl(path: string | null) {
+  if (!path || !path.startsWith('/')) return path;
+  if (Platform.OS === 'web' && typeof window !== 'undefined') {
+    return `${window.location.origin}${(process.env.EXPO_BASE_URL ?? '').replace(/\/$/, '')}${path}`;
+  }
+  return `${HOSTED_SITE}${path}`;
+}
 
 export type DProfile = {
   id: string;
@@ -81,7 +93,7 @@ export type DReview = {
 export type DAccount = { email: string; password: string; user_id: string };
 
 export type DemoDb = {
-  version: 1;
+  version: 2;
   accounts: DAccount[];
   profiles: DProfile[];
   events: DEvent[];
@@ -112,17 +124,18 @@ export function freshDb(): DemoDb {
 
   const events: DEvent[] = seed.events.map((e) => ({
     ...(e as unknown as Omit<DEvent, 'start_at' | 'end_at' | 'created_at'>),
+    cover_url: assetUrl(e.cover_url),
     start_at: at(e.start_offset)!,
     end_at: at(e.end_offset),
     created_at: now,
   }));
 
   return {
-    version: 1,
+    version: 2,
     accounts: seed.accounts.map((a) => ({ ...a, password: DEMO_PASSWORD })),
     profiles: seed.profiles.map((p) => ({ ...(p as Omit<DProfile, 'created_at'>), created_at: now })),
     events,
-    photos: seed.photos.map((p) => ({ ...p, id: newId() })),
+    photos: seed.photos.map((p) => ({ ...p, url: assetUrl(p.url)!, id: newId() })),
     stops: seed.stops.map((s) => ({ ...s, id: newId() })),
     applications: seed.applications.map((a) => ({
       ...(a as Omit<DApplication, 'id' | 'created_at' | 'decided_at'>),
@@ -145,7 +158,7 @@ export function getDb(): Promise<DemoDb> {
     try {
       const raw = await AsyncStorage.getItem(STORAGE_KEY);
       const parsed = raw ? (JSON.parse(raw) as DemoDb) : null;
-      db = parsed?.version === 1 ? parsed : freshDb();
+      db = parsed?.version === 2 ? parsed : freshDb();
     } catch {
       db = freshDb();
     }

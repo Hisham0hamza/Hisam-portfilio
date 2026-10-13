@@ -1,6 +1,7 @@
 // Downloads freely licensed photos of each event's place from Wikimedia Commons into
 // public/images/events/ and writes CREDITS.md (licence + author + source per photo).
 // Run in CI (see .github/workflows/fetch-photos.yml) or locally: node scripts/fetch-event-photos.mjs
+import { Buffer } from 'node:buffer';
 import fs from 'node:fs';
 import path from 'node:path';
 

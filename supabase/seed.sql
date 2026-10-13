@@ -105,7 +105,7 @@ insert into public.events (
  'heritage_walk', 'cairo', 'Gamaleya', pg_temp.pt(31.2627, 30.0548), 'Bab al-Futuh gate, Al-Muizz Street',
  pg_temp.cairo(3, '16:00'), null, 150, 'easy', 2.5, 0, 'Guiding, Arabic coffee at the end', 20,
  '{ar,en}', false, true, 'Comfortable shoes, water, modest clothing for mosque visits', 'Free event — please cancel in the app if you cannot come.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-muizz/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/muizz-3.jpg'),
 
 ('b0000000-0000-4000-8000-000000000002', 'a0000000-0000-4000-8000-000000000003',
  'Khan el-Khalili Food Crawl',
@@ -113,7 +113,7 @@ insert into public.events (
  'food_walk', 'cairo', 'Khan el-Khalili', pg_temp.pt(31.2622, 30.0477), 'In front of Al-Hussein Mosque',
  pg_temp.cairo(2, '18:30'), null, 180, 'easy', 2, 350, 'All tastings and drinks', 6,
  '{en,ar}', false, false, 'An empty stomach', 'Full refund up to 48 hours before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-khan/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/khan-el-khalili.jpg'),
 
 ('b0000000-0000-4000-8000-000000000003', 'a0000000-0000-4000-8000-000000000001',
  'Coptic Cairo & the Religions Compound',
@@ -121,7 +121,7 @@ insert into public.events (
  'heritage_walk', 'cairo', 'Old Cairo', pg_temp.pt(31.2300, 30.0053), 'Mar Girgis metro station exit',
  pg_temp.cairo(5, '10:00'), null, 180, 'easy', 2, 200, 'Guiding, entry tickets', 15,
  '{en}', false, true, 'Modest clothing, water', 'Full refund up to 24 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-coptic/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/coptic-cairo-2.jpg'),
 
 ('b0000000-0000-4000-8000-000000000004', 'a0000000-0000-4000-8000-000000000001',
  'Downtown Belle Époque Architecture Walk',
@@ -129,7 +129,7 @@ insert into public.events (
  'heritage_walk', 'cairo', 'Downtown', pg_temp.pt(31.2408, 30.0490), 'Talaat Harb Square, by the statue',
  pg_temp.cairo(6, '17:00'), null, 120, 'easy', 3, 150, 'Guiding, printed map', 18,
  '{ar,en}', false, true, 'Camera', 'Full refund up to 24 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-downtown/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/downtown.jpg'),
 
 ('b0000000-0000-4000-8000-000000000005', 'a0000000-0000-4000-8000-000000000002',
  'Women''s Sunrise Photo Walk in Zamalek',
@@ -137,7 +137,7 @@ insert into public.events (
  'photo_walk', 'cairo', 'Zamalek', pg_temp.pt(31.2243, 30.0459), 'Cairo Tower main gate',
  pg_temp.cairo(4, '06:00'), null, 120, 'easy', 3, 100, 'Coffee and photo critique', 6,
  '{ar,en}', true, false, 'Phone or camera, charged battery', 'Full refund up to 24 hours before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-zamalek/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/zamalek.jpg'),
 
 ('b0000000-0000-4000-8000-000000000006', 'a0000000-0000-4000-8000-000000000004',
  'Wadi Degla Canyon Hike',
@@ -145,7 +145,7 @@ insert into public.events (
  'nature_hike', 'cairo', 'Maadi', pg_temp.pt(31.3200, 29.9580), 'Wadi Degla main gate (protectorate entrance)',
  pg_temp.cairo(3, '07:00'), null, 240, 'moderate', 10, 0, 'Guide, first aid', 30,
  '{ar,en}', false, false, '2L water, snacks, hat, sunscreen, hiking shoes', 'Free event — please cancel if you can''t make it.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-degla/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-degla.jpg'),
 
 ('b0000000-0000-4000-8000-000000000007', 'a0000000-0000-4000-8000-000000000004',
  'Al-Azhar Park Family Walk & Picnic',
@@ -153,7 +153,7 @@ insert into public.events (
  'nature_hike', 'cairo', 'Al-Darb al-Ahmar', pg_temp.pt(31.2640, 30.0410), 'Al-Azhar Park main gate, Salah Salem',
  pg_temp.cairo(8, '15:00'), null, 150, 'easy', 3, 0, 'Games for kids', 40,
  '{ar}', false, true, 'Picnic blanket, snacks, park entry ticket', 'Free event.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-azhar/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/azhar-park.jpg'),
 
 ('b0000000-0000-4000-8000-000000000008', 'a0000000-0000-4000-8000-000000000001',
  'The Citadel & Sultan Hassan',
@@ -161,7 +161,7 @@ insert into public.events (
  'heritage_walk', 'cairo', 'Citadel', pg_temp.pt(31.2565, 30.0320), 'Sultan Hassan Mosque entrance',
  pg_temp.cairo(10, '09:30'), null, 210, 'moderate', 4, 250, 'Guiding, entry tickets', 15,
  '{ar,en}', false, true, 'Water, modest clothing', 'Full refund up to 24 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-citadel/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/citadel.jpg'),
 
 ('b0000000-0000-4000-8000-000000000009', 'a0000000-0000-4000-8000-000000000002',
  'Bab Zuweila & the Tentmakers'' Street',
@@ -169,7 +169,7 @@ insert into public.events (
  'photo_walk', 'cairo', 'Al-Darb al-Ahmar', pg_temp.pt(31.2577, 30.0428), 'Bab Zuweila gate',
  pg_temp.cairo(12, '10:00'), null, 150, 'easy', 1.5, 180, 'Entry to Bab Zuweila', 12,
  '{ar,en}', false, false, 'Camera, small cash for purchases', 'Full refund up to 24 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-zuweila/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/bab-zuweila.jpg'),
 
 ('b0000000-0000-4000-8000-000000000010', 'a0000000-0000-4000-8000-000000000003',
  'Sayeda Zeinab Late-Night Street Food',
@@ -177,7 +177,7 @@ insert into public.events (
  'food_walk', 'cairo', 'Sayeda Zeinab', pg_temp.pt(31.2421, 30.0293), 'Sayeda Zeinab Mosque square',
  pg_temp.cairo(9, '20:00'), null, 150, 'easy', 1.5, 300, 'All food and drinks', 10,
  '{ar,en}', false, false, 'Wet wipes', 'Full refund up to 48 hours before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-sayeda/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/sayeda-zeinab.jpg'),
 
 -- ======================= GIZA =======================
 ('b0000000-0000-4000-8000-000000000011', 'a0000000-0000-4000-8000-000000000004',
@@ -186,7 +186,7 @@ insert into public.events (
  'nature_hike', 'giza', 'Giza Plateau', pg_temp.pt(31.1342, 29.9792), 'Pyramids main gate (Mena House side)',
  pg_temp.cairo(7, '07:30'), null, 210, 'moderate', 8, 400, 'Guide, plateau entry ticket', 20,
  '{en,ar}', false, true, 'Hat, sunscreen, 2L water', 'Full refund up to 48 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-pyramids/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/giza-pyramids.jpg'),
 
 ('b0000000-0000-4000-8000-000000000012', 'a0000000-0000-4000-8000-000000000001',
  'Saqqara & Dahshur Day Trip',
@@ -194,7 +194,7 @@ insert into public.events (
  'city_trip', 'giza', 'Saqqara', pg_temp.pt(31.2165, 29.8713), 'Saqqara ticket office',
  pg_temp.cairo(11, '08:00'), null, 540, 'moderate', 6, 950, 'Transport from Cairo, lunch, entry tickets', 14,
  '{en}', false, true, 'Hat, water, cash for tips', '50% refund up to 72 hours before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-saqqara/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/saqqara.jpg'),
 
 -- ======================= ALEXANDRIA =======================
 ('b0000000-0000-4000-8000-000000000013', 'a0000000-0000-4000-8000-000000000005',
@@ -203,7 +203,7 @@ insert into public.events (
  'heritage_walk', 'alexandria', 'Anfoushi', pg_temp.pt(29.8856, 31.2140), 'Qaitbay Citadel gate',
  pg_temp.cairo(4, '16:30'), null, 150, 'easy', 3, 150, 'Guiding, citadel entry', 20,
  '{ar,en}', false, true, 'Light jacket (sea breeze)', 'Full refund up to 24 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-qaitbay/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/qaitbay.jpg'),
 
 ('b0000000-0000-4000-8000-000000000014', 'a0000000-0000-4000-8000-000000000005',
  'Alexandria Seafood & Sweets Walk',
@@ -211,7 +211,7 @@ insert into public.events (
  'food_walk', 'alexandria', 'Raml Station', pg_temp.pt(29.9030, 31.2006), 'Raml Station tram stop',
  pg_temp.cairo(5, '13:00'), null, 210, 'easy', 3.5, 450, 'All tastings', 12,
  '{ar}', false, false, 'Appetite', 'Full refund up to 48 hours before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-alexfood/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/alexandria-corniche.jpg'),
 
 ('b0000000-0000-4000-8000-000000000015', 'a0000000-0000-4000-8000-000000000005',
  'Montazah Gardens Sunset Walk',
@@ -219,7 +219,7 @@ insert into public.events (
  'nature_hike', 'alexandria', 'Montazah', pg_temp.pt(30.0164, 31.2885), 'Montazah main gate',
  pg_temp.cairo(13, '16:00'), null, 120, 'easy', 4, 0, null, 25,
  '{ar,en}', false, true, 'Garden entry ticket', 'Free event.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-montazah/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/montazah.jpg'),
 
 ('b0000000-0000-4000-8000-000000000016', 'a0000000-0000-4000-8000-000000000005',
  'Bibliotheca & Roman Alexandria',
@@ -227,7 +227,7 @@ insert into public.events (
  'heritage_walk', 'alexandria', 'Shatby', pg_temp.pt(29.9092, 31.2089), 'Bibliotheca Alexandrina plaza',
  pg_temp.cairo(14, '10:00'), null, 240, 'easy', 5, 250, 'Guiding, entry tickets', 15,
  '{en,fr}', false, true, 'Comfortable shoes', 'Full refund up to 24 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-bibalex/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/bibliotheca.jpg'),
 
 -- ======================= FAYOUM =======================
 ('b0000000-0000-4000-8000-000000000017', 'a0000000-0000-4000-8000-000000000006',
@@ -236,7 +236,7 @@ insert into public.events (
  'city_trip', 'fayoum', 'Wadi El Rayan', pg_temp.pt(30.4183, 29.1919), 'Wadi El Rayan protectorate gate',
  pg_temp.cairo(6, '09:00'), null, 600, 'moderate', 5, 850, 'Transport from Cairo, lunch, sandboards', 20,
  '{ar,en}', false, true, 'Swimwear, towel, sunscreen', '50% refund up to 72 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-rayan/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-el-rayan-2.jpg'),
 
 ('b0000000-0000-4000-8000-000000000018', 'a0000000-0000-4000-8000-000000000006',
  'Tunis Village Pottery Weekend',
@@ -244,7 +244,7 @@ insert into public.events (
  'multi_day_trip', 'fayoum', 'Tunis Village', pg_temp.pt(30.5464, 29.4122), 'Tunis Village main square',
  pg_temp.cairo(15, '10:00'), pg_temp.cairo(16, '17:00'), 1860, 'easy', 6, 2200, 'Lodge, meals, pottery workshop', 12,
  '{ar,en}', false, true, 'Overnight bag, warm layer', '50% refund up to 7 days before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-tunis/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/tunis-village.jpg'),
 
 ('b0000000-0000-4000-8000-000000000019', 'a0000000-0000-4000-8000-000000000006',
  'Wadi Al-Hitan Fossils & Stargazing',
@@ -252,7 +252,7 @@ insert into public.events (
  'multi_day_trip', 'fayoum', 'Wadi Al-Hitan', pg_temp.pt(30.0434, 29.2708), 'Wadi Al-Hitan visitor centre',
  pg_temp.cairo(9, '14:00'), pg_temp.cairo(10, '11:00'), 1260, 'moderate', 8, 1800, 'Camping gear, dinner, breakfast, telescope', 16,
  '{ar,en}', false, false, 'Sleeping bag, headlamp, warm jacket', '50% refund up to 7 days before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-hitan/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-al-hitan.jpg'),
 
 -- ======================= SIWA =======================
 ('b0000000-0000-4000-8000-000000000020', 'a0000000-0000-4000-8000-000000000006',
@@ -261,7 +261,7 @@ insert into public.events (
  'multi_day_trip', 'siwa', 'Siwa Town', pg_temp.pt(25.5195, 29.2032), 'Shali fortress, Siwa market square',
  pg_temp.cairo(18, '09:00'), pg_temp.cairo(21, '18:00'), 4860, 'moderate', 25, 6500, 'Eco-lodge, all meals, 4x4 safari', 10,
  '{ar,en,de}', false, true, 'Swimwear, scarf, warm layer for nights', '50% refund up to 14 days before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-siwa/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/siwa.jpg'),
 
 ('b0000000-0000-4000-8000-000000000021', 'a0000000-0000-4000-8000-000000000006',
  'Siwa Salt Lakes Float & Sunset',
@@ -269,7 +269,7 @@ insert into public.events (
  'nature_hike', 'siwa', 'Salt Lakes', pg_temp.pt(25.4950, 29.1650), 'Salt lakes car park',
  pg_temp.cairo(19, '14:00'), null, 240, 'easy', 3, 600, 'Transport within Siwa, tea', 15,
  '{ar,en}', false, true, 'Swimwear, towel, fresh water to rinse', 'Full refund up to 48 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-salt/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/siwa-salt-lake.jpg'),
 
 -- ======================= SINAI =======================
 ('b0000000-0000-4000-8000-000000000022', 'a0000000-0000-4000-8000-000000000004',
@@ -278,7 +278,7 @@ insert into public.events (
  'nature_hike', 'dahab', 'Blue Hole', pg_temp.pt(34.5379, 28.5722), 'Blue Hole car park',
  pg_temp.cairo(16, '08:00'), null, 300, 'moderate', 12, 300, 'Guide, snorkel gear', 12,
  '{en,ar}', false, false, 'Swimwear, water shoes, 3L water', 'Full refund up to 48 hours before.', 'auto',
- 'published', 'https://picsum.photos/seed/masar-bluehole/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/blue-hole-dahab.jpg'),
 
 ('b0000000-0000-4000-8000-000000000023', 'a0000000-0000-4000-8000-000000000004',
  'Mount Sinai Sunrise Trek',
@@ -286,7 +286,7 @@ insert into public.events (
  'nature_hike', 'south_sinai', 'St. Catherine', pg_temp.pt(33.9750, 28.5560), 'St. Catherine''s Monastery car park',
  pg_temp.cairo(17, '01:00'), null, 420, 'hard', 14, 700, 'Bedouin guide, tea at the summit', 8,
  '{en,ar}', false, false, 'Headlamp, warm jacket, gloves, 2L water', 'Full refund up to 72 hours before.', 'manual',
- 'published', 'https://picsum.photos/seed/masar-sinai/1200/800'),
+ 'published', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/mount-sinai-2.jpg'),
 
 -- ======================= COMPLETED (for reviews) =======================
 ('b0000000-0000-4000-8000-000000000024', 'a0000000-0000-4000-8000-000000000001',
@@ -295,7 +295,7 @@ insert into public.events (
  'heritage_walk', 'cairo', 'Gamaleya', pg_temp.pt(31.2614, 30.0497), 'Qalawun complex',
  pg_temp.cairo(-10, '19:00'), null, 120, 'easy', 2, 0, null, 20,
  '{ar,en}', false, true, null, null, 'auto',
- 'completed', 'https://picsum.photos/seed/masar-muizznight/1200/800'),
+ 'completed', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/qalawun.jpg'),
 
 ('b0000000-0000-4000-8000-000000000025', 'a0000000-0000-4000-8000-000000000004',
  'Wadi Degla Sunset Hike',
@@ -303,7 +303,7 @@ insert into public.events (
  'nature_hike', 'cairo', 'Maadi', pg_temp.pt(31.3200, 29.9580), 'Wadi Degla main gate',
  pg_temp.cairo(-6, '15:00'), null, 180, 'moderate', 7, 0, null, 25,
  '{ar,en}', false, false, null, null, 'auto',
- 'completed', 'https://picsum.photos/seed/masar-deglasunset/1200/800'),
+ 'completed', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-degla-3.jpg'),
 
 ('b0000000-0000-4000-8000-000000000026', 'a0000000-0000-4000-8000-000000000003',
  'Downtown Cafés & Bakeries',
@@ -311,7 +311,7 @@ insert into public.events (
  'food_walk', 'cairo', 'Downtown', pg_temp.pt(31.2402, 30.0478), 'Groppi, Talaat Harb Square',
  pg_temp.cairo(-3, '11:00'), null, 150, 'easy', 2, 250, 'Tastings and coffee', 10,
  '{en,ar}', false, false, null, null, 'auto',
- 'completed', 'https://picsum.photos/seed/masar-cafes/1200/800')
+ 'completed', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/cafe-riche.jpg')
 on conflict (id) do nothing;
 
 -- ---------------------------------------------------------------------------
@@ -342,17 +342,26 @@ insert into public.event_stops (event_id, name, location, sort_order) values
   ('b0000000-0000-4000-8000-000000000023', 'Summit chapel',             pg_temp.pt(33.9755, 28.5394), 2);
 
 -- ---------------------------------------------------------------------------
--- Gallery photos
+-- Gallery photos (Wikimedia Commons, see public/images/events/CREDITS.md)
 -- ---------------------------------------------------------------------------
-insert into public.event_photos (event_id, url, sort_order)
-select e.id, 'https://picsum.photos/seed/' || replace(e.id::text, '-', '') || '-' || g || '/1200/800', g
-  from public.events e
-  cross join generate_series(1, 3) g
- where e.id in (
-   'b0000000-0000-4000-8000-000000000001', 'b0000000-0000-4000-8000-000000000003',
-   'b0000000-0000-4000-8000-000000000006', 'b0000000-0000-4000-8000-000000000017',
-   'b0000000-0000-4000-8000-000000000020', 'b0000000-0000-4000-8000-000000000023'
- );
+insert into public.event_photos (event_id, url, sort_order) values
+  ('b0000000-0000-4000-8000-000000000001', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/muizz-2.jpg', 1),
+  ('b0000000-0000-4000-8000-000000000001', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/muizz-4.jpg', 2),
+  ('b0000000-0000-4000-8000-000000000001', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/muizz.jpg', 3),
+  ('b0000000-0000-4000-8000-000000000003', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/coptic-cairo.jpg', 1),
+  ('b0000000-0000-4000-8000-000000000003', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/coptic-cairo-3.jpg', 2),
+  ('b0000000-0000-4000-8000-000000000006', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-degla-2.jpg', 1),
+  ('b0000000-0000-4000-8000-000000000006', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-degla-3.jpg', 2),
+  ('b0000000-0000-4000-8000-000000000006', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-degla.jpg', 3),
+  ('b0000000-0000-4000-8000-000000000017', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-el-rayan-3.jpg', 1),
+  ('b0000000-0000-4000-8000-000000000017', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-el-rayan-4.jpg', 2),
+  ('b0000000-0000-4000-8000-000000000017', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/wadi-el-rayan.jpg', 3),
+  ('b0000000-0000-4000-8000-000000000020', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/siwa-2.jpg', 1),
+  ('b0000000-0000-4000-8000-000000000020', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/siwa-3.jpg', 2),
+  ('b0000000-0000-4000-8000-000000000020', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/siwa-4.jpg', 3),
+  ('b0000000-0000-4000-8000-000000000023', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/mount-sinai.jpg', 1),
+  ('b0000000-0000-4000-8000-000000000023', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/mount-sinai-3.jpg', 2),
+  ('b0000000-0000-4000-8000-000000000023', 'https://hisham0hamza.github.io/Hisam-portfilio/images/events/mount-sinai-4.jpg', 3);
 
 -- ---------------------------------------------------------------------------
 -- Applications

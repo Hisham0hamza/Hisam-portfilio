@@ -1,1667 +1,1662 @@
 {
-    "stops": [
-        {
-            "lat": 30.05480,
-            "lng": 31.26270,
-            "name": "Bab al-Futuh",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 1
-        },
-        {
-            "lat": 30.05250,
-            "lng": 31.26200,
-            "name": "Al-Aqmar Mosque",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 2
-        },
-        {
-            "lat": 30.05200,
-            "lng": 31.26320,
-            "name": "Beit al-Suhaymi",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 3
-        },
-        {
-            "lat": 30.04970,
-            "lng": 31.26140,
-            "name": "Qalawun Complex",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 4
-        },
-        {
-            "lat": 30.04280,
-            "lng": 31.25770,
-            "name": "Bab Zuweila",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 5
-        },
-        {
-            "lat": 30.00530,
-            "lng": 31.23000,
-            "name": "The Hanging Church",
-            "event_id": "b0000000-0000-4000-8000-000000000003",
-            "sort_order": 1
-        },
-        {
-            "lat": 30.00600,
-            "lng": 31.23100,
-            "name": "Abu Serga Church",
-            "event_id": "b0000000-0000-4000-8000-000000000003",
-            "sort_order": 2
-        },
-        {
-            "lat": 30.00570,
-            "lng": 31.23180,
-            "name": "Ben Ezra Synagogue",
-            "event_id": "b0000000-0000-4000-8000-000000000003",
-            "sort_order": 3
-        },
-        {
-            "lat": 30.01020,
-            "lng": 31.23350,
-            "name": "Mosque of Amr ibn al-As",
-            "event_id": "b0000000-0000-4000-8000-000000000003",
-            "sort_order": 4
-        },
-        {
-            "lat": 30.05000,
-            "lng": 31.24250,
-            "name": "Cosmopolitan Hotel",
-            "event_id": "b0000000-0000-4000-8000-000000000004",
-            "sort_order": 1
-        },
-        {
-            "lat": 30.05200,
-            "lng": 31.24620,
-            "name": "Emad El-Din Street",
-            "event_id": "b0000000-0000-4000-8000-000000000004",
-            "sort_order": 2
-        },
-        {
-            "lat": 30.05050,
-            "lng": 31.24100,
-            "name": "Cinema Radio",
-            "event_id": "b0000000-0000-4000-8000-000000000004",
-            "sort_order": 3
-        },
-        {
-            "lat": 30.03200,
-            "lng": 31.25650,
-            "name": "Sultan Hassan Mosque",
-            "event_id": "b0000000-0000-4000-8000-000000000008",
-            "sort_order": 1
-        },
-        {
-            "lat": 30.03250,
-            "lng": 31.25750,
-            "name": "Al-Rifai Mosque",
-            "event_id": "b0000000-0000-4000-8000-000000000008",
-            "sort_order": 2
-        },
-        {
-            "lat": 30.02870,
-            "lng": 31.25990,
-            "name": "Muhammad Ali Mosque",
-            "event_id": "b0000000-0000-4000-8000-000000000008",
-            "sort_order": 3
-        },
-        {
-            "lat": 31.21400,
-            "lng": 29.88560,
-            "name": "Qaitbay Citadel",
-            "event_id": "b0000000-0000-4000-8000-000000000013",
-            "sort_order": 1
-        },
-        {
-            "lat": 31.20500,
-            "lng": 29.88900,
-            "name": "Anfoushi fishing harbour",
-            "event_id": "b0000000-0000-4000-8000-000000000013",
-            "sort_order": 2
-        },
-        {
-            "lat": 31.20890,
-            "lng": 29.90920,
-            "name": "Bibliotheca Alexandrina",
-            "event_id": "b0000000-0000-4000-8000-000000000016",
-            "sort_order": 1
-        },
-        {
-            "lat": 31.19450,
-            "lng": 29.90400,
-            "name": "Kom el-Dikka Amphitheatre",
-            "event_id": "b0000000-0000-4000-8000-000000000016",
-            "sort_order": 2
-        },
-        {
-            "lat": 31.18250,
-            "lng": 29.89630,
-            "name": "Pompey's Pillar",
-            "event_id": "b0000000-0000-4000-8000-000000000016",
-            "sort_order": 3
-        },
-        {
-            "lat": 28.54100,
-            "lng": 33.97300,
-            "name": "Elijah's Basin",
-            "event_id": "b0000000-0000-4000-8000-000000000023",
-            "sort_order": 1
-        },
-        {
-            "lat": 28.53940,
-            "lng": 33.97550,
-            "name": "Summit chapel",
-            "event_id": "b0000000-0000-4000-8000-000000000023",
-            "sort_order": 2
-        }
-    ],
-    "cities": [
-        {
-            "slug": "cairo",
-            "name_ar": "القاهرة",
-            "name_en": "Cairo"
-        },
-        {
-            "slug": "giza",
-            "name_ar": "الجيزة",
-            "name_en": "Giza"
-        },
-        {
-            "slug": "alexandria",
-            "name_ar": "الإسكندرية",
-            "name_en": "Alexandria"
-        },
-        {
-            "slug": "fayoum",
-            "name_ar": "الفيوم",
-            "name_en": "Fayoum"
-        },
-        {
-            "slug": "siwa",
-            "name_ar": "سيوة",
-            "name_en": "Siwa"
-        },
-        {
-            "slug": "dahab",
-            "name_ar": "دهب",
-            "name_en": "Dahab"
-        },
-        {
-            "slug": "south_sinai",
-            "name_ar": "جنوب سيناء",
-            "name_en": "South Sinai"
-        },
-        {
-            "slug": "luxor",
-            "name_ar": "الأقصر",
-            "name_en": "Luxor"
-        },
-        {
-            "slug": "aswan",
-            "name_ar": "أسوان",
-            "name_en": "Aswan"
-        },
-        {
-            "slug": "red_sea",
-            "name_ar": "البحر الأحمر",
-            "name_en": "Red Sea"
-        }
-    ],
-    "events": [
-        {
-            "id": "b0000000-0000-4000-8000-000000000001",
-            "area": "Gamaleya",
-            "city": "cairo",
-            "title": "Al-Muizz Street at Golden Hour",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "capacity": 20,
-            "category": "heritage_walk",
-            "includes": "Guiding, Arabic coffee at the end",
-            "cover_url": "https://picsum.photos/seed/masar-muizz/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 0.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Walk the full length of Al-Muizz li-Din Allah Street from Bab al-Futuh to Bab Zuweila as the sun sets over a thousand years of minarets. We stop at the Qalawun complex, Beit al-Suhaymi and the Al-Aqmar mosque, with stories of the Fatimid and Mamluk city.",
-            "distance_km": 2.50,
-            "meeting_lat": 30.05480,
-            "meeting_lng": 31.26270,
-            "start_offset": 306000000,
-            "approval_mode": "auto",
-            "what_to_bring": "Comfortable shoes, water, modest clothing for mosque visits",
-            "family_friendly": true,
-            "meeting_address": "Bab al-Futuh gate, Al-Muizz Street",
-            "duration_minutes": 150,
-            "cancellation_policy": "Free event — please cancel in the app if you cannot come."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000002",
-            "area": "Khan el-Khalili",
-            "city": "cairo",
-            "title": "Khan el-Khalili Food Crawl",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000003",
-            "capacity": 6,
-            "category": "food_walk",
-            "includes": "All tastings and drinks",
-            "cover_url": "https://picsum.photos/seed/masar-khan/1200/800",
-            "languages": [
-                "en",
-                "ar"
-            ],
-            "price_egp": 350.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Eight tastings in three hours: ful and taameya, hawawshi, feteer, sobia, roz bel laban and the legendary El Fishawy tea. Vegetarian options at every stop.",
-            "distance_km": 2.00,
-            "meeting_lat": 30.04770,
-            "meeting_lng": 31.26220,
-            "start_offset": 228600000,
-            "approval_mode": "manual",
-            "what_to_bring": "An empty stomach",
-            "family_friendly": false,
-            "meeting_address": "In front of Al-Hussein Mosque",
-            "duration_minutes": 180,
-            "cancellation_policy": "Full refund up to 48 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000003",
-            "area": "Old Cairo",
-            "city": "cairo",
-            "title": "Coptic Cairo & the Religions Compound",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "capacity": 15,
-            "category": "heritage_walk",
-            "includes": "Guiding, entry tickets",
-            "cover_url": "https://picsum.photos/seed/masar-coptic/1200/800",
-            "languages": [
-                "en"
-            ],
-            "price_egp": 200.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "The Hanging Church, Abu Serga, the Ben Ezra Synagogue and the Mosque of Amr ibn al-As — two thousand years of faith within a few hundred metres.",
-            "distance_km": 2.00,
-            "meeting_lat": 30.00530,
-            "meeting_lng": 31.23000,
-            "start_offset": 457200000,
-            "approval_mode": "auto",
-            "what_to_bring": "Modest clothing, water",
-            "family_friendly": true,
-            "meeting_address": "Mar Girgis metro station exit",
-            "duration_minutes": 180,
-            "cancellation_policy": "Full refund up to 24 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000004",
-            "area": "Downtown",
-            "city": "cairo",
-            "title": "Downtown Belle Époque Architecture Walk",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "capacity": 18,
-            "category": "heritage_walk",
-            "includes": "Guiding, printed map",
-            "cover_url": "https://picsum.photos/seed/masar-downtown/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 150.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Khedival Cairo's Paris-on-the-Nile: Talaat Harb, Emad El-Din, the Cosmopolitan Hotel and hidden passages full of Art Deco details.",
-            "distance_km": 3.00,
-            "meeting_lat": 30.04900,
-            "meeting_lng": 31.24080,
-            "start_offset": 568800000,
-            "approval_mode": "auto",
-            "what_to_bring": "Camera",
-            "family_friendly": true,
-            "meeting_address": "Talaat Harb Square, by the statue",
-            "duration_minutes": 120,
-            "cancellation_policy": "Full refund up to 24 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000005",
-            "area": "Zamalek",
-            "city": "cairo",
-            "title": "Women's Sunrise Photo Walk in Zamalek",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000002",
-            "capacity": 6,
-            "category": "photo_walk",
-            "includes": "Coffee and photo critique",
-            "cover_url": "https://picsum.photos/seed/masar-zamalek/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 100.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": true,
-            "description": "A calm, women-only morning shooting the Nile, the Cairo Tower and Zamalek's villas in the soft first light. Composition tips for phones and cameras.",
-            "distance_km": 3.00,
-            "meeting_lat": 30.04590,
-            "meeting_lng": 31.22430,
-            "start_offset": 356400000,
-            "approval_mode": "manual",
-            "what_to_bring": "Phone or camera, charged battery",
-            "family_friendly": false,
-            "meeting_address": "Cairo Tower main gate",
-            "duration_minutes": 120,
-            "cancellation_policy": "Full refund up to 24 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000006",
-            "area": "Maadi",
-            "city": "cairo",
-            "title": "Wadi Degla Canyon Hike",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "capacity": 30,
-            "category": "nature_hike",
-            "includes": "Guide, first aid",
-            "cover_url": "https://picsum.photos/seed/masar-degla/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 0.00,
-            "difficulty": "moderate",
-            "end_offset": null,
-            "women_only": false,
-            "description": "A 10 km loop through the limestone canyon of Wadi Degla protectorate, looking for fossils and desert foxes. Steady pace with regular breaks.",
-            "distance_km": 10.00,
-            "meeting_lat": 29.95800,
-            "meeting_lng": 31.32000,
-            "start_offset": 273600000,
-            "approval_mode": "auto",
-            "what_to_bring": "2L water, snacks, hat, sunscreen, hiking shoes",
-            "family_friendly": false,
-            "meeting_address": "Wadi Degla main gate (protectorate entrance)",
-            "duration_minutes": 240,
-            "cancellation_policy": "Free event — please cancel if you can't make it."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000007",
-            "area": "Al-Darb al-Ahmar",
-            "city": "cairo",
-            "title": "Al-Azhar Park Family Walk & Picnic",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "capacity": 40,
-            "category": "nature_hike",
-            "includes": "Games for kids",
-            "cover_url": "https://picsum.photos/seed/masar-azhar/1200/800",
-            "languages": [
-                "ar"
-            ],
-            "price_egp": 0.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "An easy loop around Al-Azhar Park with views of the Citadel and the Ayyubid wall, then a picnic on the lawns. Kids welcome.",
-            "distance_km": 3.00,
-            "meeting_lat": 30.04100,
-            "meeting_lng": 31.26400,
-            "start_offset": 734400000,
-            "approval_mode": "auto",
-            "what_to_bring": "Picnic blanket, snacks, park entry ticket",
-            "family_friendly": true,
-            "meeting_address": "Al-Azhar Park main gate, Salah Salem",
-            "duration_minutes": 150,
-            "cancellation_policy": "Free event."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000008",
-            "area": "Citadel",
-            "city": "cairo",
-            "title": "The Citadel & Sultan Hassan",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "capacity": 15,
-            "category": "heritage_walk",
-            "includes": "Guiding, entry tickets",
-            "cover_url": "https://picsum.photos/seed/masar-citadel/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 250.00,
-            "difficulty": "moderate",
-            "end_offset": null,
-            "women_only": false,
-            "description": "From the Mosque of Sultan Hassan and Al-Rifai to the Citadel of Salah al-Din and the Muhammad Ali Mosque, with the best view in Cairo.",
-            "distance_km": 4.00,
-            "meeting_lat": 30.03200,
-            "meeting_lng": 31.25650,
-            "start_offset": 887400000,
-            "approval_mode": "auto",
-            "what_to_bring": "Water, modest clothing",
-            "family_friendly": true,
-            "meeting_address": "Sultan Hassan Mosque entrance",
-            "duration_minutes": 210,
-            "cancellation_policy": "Full refund up to 24 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000009",
-            "area": "Al-Darb al-Ahmar",
-            "city": "cairo",
-            "title": "Bab Zuweila & the Tentmakers' Street",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000002",
-            "capacity": 12,
-            "category": "photo_walk",
-            "includes": "Entry to Bab Zuweila",
-            "cover_url": "https://picsum.photos/seed/masar-zuweila/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 180.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Climb the minarets of Bab Zuweila, then photograph the appliqué artisans of Al-Khayamiya, Cairo's last covered market.",
-            "distance_km": 1.50,
-            "meeting_lat": 30.04280,
-            "meeting_lng": 31.25770,
-            "start_offset": 1062000000,
-            "approval_mode": "auto",
-            "what_to_bring": "Camera, small cash for purchases",
-            "family_friendly": false,
-            "meeting_address": "Bab Zuweila gate",
-            "duration_minutes": 150,
-            "cancellation_policy": "Full refund up to 24 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000010",
-            "area": "Sayeda Zeinab",
-            "city": "cairo",
-            "title": "Sayeda Zeinab Late-Night Street Food",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000003",
-            "capacity": 10,
-            "category": "food_walk",
-            "includes": "All food and drinks",
-            "cover_url": "https://picsum.photos/seed/masar-sayeda/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 300.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Koshary, kebda Iskandarani, mombar and a sweet finish with basbousa — Cairo eats after dark.",
-            "distance_km": 1.50,
-            "meeting_lat": 30.02930,
-            "meeting_lng": 31.24210,
-            "start_offset": 838800000,
-            "approval_mode": "manual",
-            "what_to_bring": "Wet wipes",
-            "family_friendly": false,
-            "meeting_address": "Sayeda Zeinab Mosque square",
-            "duration_minutes": 150,
-            "cancellation_policy": "Full refund up to 48 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000011",
-            "area": "Giza Plateau",
-            "city": "giza",
-            "title": "Pyramids Desert Plateau Walk",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "capacity": 20,
-            "category": "nature_hike",
-            "includes": "Guide, plateau entry ticket",
-            "cover_url": "https://picsum.photos/seed/masar-pyramids/1200/800",
-            "languages": [
-                "en",
-                "ar"
-            ],
-            "price_egp": 400.00,
-            "difficulty": "moderate",
-            "end_offset": null,
-            "women_only": false,
-            "description": "A desert walk across the Giza plateau to the panorama point, away from the crowds, finishing at the Sphinx.",
-            "distance_km": 8.00,
-            "meeting_lat": 29.97920,
-            "meeting_lng": 31.13420,
-            "start_offset": 621000000,
-            "approval_mode": "auto",
-            "what_to_bring": "Hat, sunscreen, 2L water",
-            "family_friendly": true,
-            "meeting_address": "Pyramids main gate (Mena House side)",
-            "duration_minutes": 210,
-            "cancellation_policy": "Full refund up to 48 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000012",
-            "area": "Saqqara",
-            "city": "giza",
-            "title": "Saqqara & Dahshur Day Trip",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "capacity": 14,
-            "category": "city_trip",
-            "includes": "Transport from Cairo, lunch, entry tickets",
-            "cover_url": "https://picsum.photos/seed/masar-saqqara/1200/800",
-            "languages": [
-                "en"
-            ],
-            "price_egp": 950.00,
-            "difficulty": "moderate",
-            "end_offset": null,
-            "women_only": false,
-            "description": "The Step Pyramid of Djoser, the Serapeum and the Bent and Red Pyramids of Dahshur — the pyramids before Giza.",
-            "distance_km": 6.00,
-            "meeting_lat": 29.87130,
-            "meeting_lng": 31.21650,
-            "start_offset": 968400000,
-            "approval_mode": "manual",
-            "what_to_bring": "Hat, water, cash for tips",
-            "family_friendly": true,
-            "meeting_address": "Saqqara ticket office",
-            "duration_minutes": 540,
-            "cancellation_policy": "50% refund up to 72 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000013",
-            "area": "Anfoushi",
-            "city": "alexandria",
-            "title": "Qaitbay Citadel & Anfoushi Sea Walk",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000005",
-            "capacity": 20,
-            "category": "heritage_walk",
-            "includes": "Guiding, citadel entry",
-            "cover_url": "https://picsum.photos/seed/masar-qaitbay/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 150.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "From the Citadel of Qaitbay, built on the ruins of the Pharos lighthouse, along the fishermen's harbour of Anfoushi.",
-            "distance_km": 3.00,
-            "meeting_lat": 31.21400,
-            "meeting_lng": 29.88560,
-            "start_offset": 394200000,
-            "approval_mode": "auto",
-            "what_to_bring": "Light jacket (sea breeze)",
-            "family_friendly": true,
-            "meeting_address": "Qaitbay Citadel gate",
-            "duration_minutes": 150,
-            "cancellation_policy": "Full refund up to 24 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000014",
-            "area": "Raml Station",
-            "city": "alexandria",
-            "title": "Alexandria Seafood & Sweets Walk",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000005",
-            "capacity": 12,
-            "category": "food_walk",
-            "includes": "All tastings",
-            "cover_url": "https://picsum.photos/seed/masar-alexfood/1200/800",
-            "languages": [
-                "ar"
-            ],
-            "price_egp": 450.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Fried fish in Anfoushi, Mohamed Ahmed's ful, Délices pastries and Sabry ice-cream — Alexandria by the mouthful.",
-            "distance_km": 3.50,
-            "meeting_lat": 31.20060,
-            "meeting_lng": 29.90300,
-            "start_offset": 468000000,
-            "approval_mode": "manual",
-            "what_to_bring": "Appetite",
-            "family_friendly": false,
-            "meeting_address": "Raml Station tram stop",
-            "duration_minutes": 210,
-            "cancellation_policy": "Full refund up to 48 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000015",
-            "area": "Montazah",
-            "city": "alexandria",
-            "title": "Montazah Gardens Sunset Walk",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000005",
-            "capacity": 25,
-            "category": "nature_hike",
-            "includes": null,
-            "cover_url": "https://picsum.photos/seed/masar-montazah/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 0.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "An easy stroll through the royal gardens of Montazah to the palace and the sea at sunset.",
-            "distance_km": 4.00,
-            "meeting_lat": 31.28850,
-            "meeting_lng": 30.01640,
-            "start_offset": 1170000000,
-            "approval_mode": "auto",
-            "what_to_bring": "Garden entry ticket",
-            "family_friendly": true,
-            "meeting_address": "Montazah main gate",
-            "duration_minutes": 120,
-            "cancellation_policy": "Free event."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000016",
-            "area": "Shatby",
-            "city": "alexandria",
-            "title": "Bibliotheca & Roman Alexandria",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000005",
-            "capacity": 15,
-            "category": "heritage_walk",
-            "includes": "Guiding, entry tickets",
-            "cover_url": "https://picsum.photos/seed/masar-bibalex/1200/800",
-            "languages": [
-                "en",
-                "fr"
-            ],
-            "price_egp": 250.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "The new Library of Alexandria, the Roman Amphitheatre of Kom el-Dikka and Pompey's Pillar.",
-            "distance_km": 5.00,
-            "meeting_lat": 31.20890,
-            "meeting_lng": 29.90920,
-            "start_offset": 1234800000,
-            "approval_mode": "auto",
-            "what_to_bring": "Comfortable shoes",
-            "family_friendly": true,
-            "meeting_address": "Bibliotheca Alexandrina plaza",
-            "duration_minutes": 240,
-            "cancellation_policy": "Full refund up to 24 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000017",
-            "area": "Wadi El Rayan",
-            "city": "fayoum",
-            "title": "Wadi El Rayan Waterfalls & Magic Lake",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000006",
-            "capacity": 20,
-            "category": "city_trip",
-            "includes": "Transport from Cairo, lunch, sandboards",
-            "cover_url": "https://picsum.photos/seed/masar-rayan/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 850.00,
-            "difficulty": "moderate",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Day trip to the only waterfalls in Egypt's Western Desert, sandboarding on the dunes and sunset at the Magic Lake.",
-            "distance_km": 5.00,
-            "meeting_lat": 29.19190,
-            "meeting_lng": 30.41830,
-            "start_offset": 540000000,
-            "approval_mode": "auto",
-            "what_to_bring": "Swimwear, towel, sunscreen",
-            "family_friendly": true,
-            "meeting_address": "Wadi El Rayan protectorate gate",
-            "duration_minutes": 600,
-            "cancellation_policy": "50% refund up to 72 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000018",
-            "area": "Tunis Village",
-            "city": "fayoum",
-            "title": "Tunis Village Pottery Weekend",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000006",
-            "capacity": 12,
-            "category": "multi_day_trip",
-            "includes": "Lodge, meals, pottery workshop",
-            "cover_url": "https://picsum.photos/seed/masar-tunis/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 2200.00,
-            "difficulty": "easy",
-            "end_offset": 1432800000,
-            "women_only": false,
-            "description": "Two days in the potters' village on Lake Qarun: a pottery workshop, a sunset walk on the lake shore and a night in an eco-lodge.",
-            "distance_km": 6.00,
-            "meeting_lat": 29.41220,
-            "meeting_lng": 30.54640,
-            "start_offset": 1321200000,
-            "approval_mode": "manual",
-            "what_to_bring": "Overnight bag, warm layer",
-            "family_friendly": true,
-            "meeting_address": "Tunis Village main square",
-            "duration_minutes": 1860,
-            "cancellation_policy": "50% refund up to 7 days before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000019",
-            "area": "Wadi Al-Hitan",
-            "city": "fayoum",
-            "title": "Wadi Al-Hitan Fossils & Stargazing",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000006",
-            "capacity": 16,
-            "category": "multi_day_trip",
-            "includes": "Camping gear, dinner, breakfast, telescope",
-            "cover_url": "https://picsum.photos/seed/masar-hitan/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 1800.00,
-            "difficulty": "moderate",
-            "end_offset": 892800000,
-            "women_only": false,
-            "description": "Walk among 40-million-year-old whale skeletons at the UNESCO site, then camp under the darkest skies near Cairo.",
-            "distance_km": 8.00,
-            "meeting_lat": 29.27080,
-            "meeting_lng": 30.04340,
-            "start_offset": 817200000,
-            "approval_mode": "auto",
-            "what_to_bring": "Sleeping bag, headlamp, warm jacket",
-            "family_friendly": false,
-            "meeting_address": "Wadi Al-Hitan visitor centre",
-            "duration_minutes": 1260,
-            "cancellation_policy": "50% refund up to 7 days before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000020",
-            "area": "Siwa Town",
-            "city": "siwa",
-            "title": "Siwa Oasis 4-Day Escape",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000006",
-            "capacity": 10,
-            "category": "multi_day_trip",
-            "includes": "Eco-lodge, all meals, 4x4 safari",
-            "cover_url": "https://picsum.photos/seed/masar-siwa/1200/800",
-            "languages": [
-                "ar",
-                "en",
-                "de"
-            ],
-            "price_egp": 6500.00,
-            "difficulty": "moderate",
-            "end_offset": 1872000000,
-            "women_only": false,
-            "description": "Salt lakes, the Shali fortress, Cleopatra's spring, the Great Sand Sea and a Bedouin dinner under the stars.",
-            "distance_km": 25.00,
-            "meeting_lat": 29.20320,
-            "meeting_lng": 25.51950,
-            "start_offset": 1580400000,
-            "approval_mode": "manual",
-            "what_to_bring": "Swimwear, scarf, warm layer for nights",
-            "family_friendly": true,
-            "meeting_address": "Shali fortress, Siwa market square",
-            "duration_minutes": 4860,
-            "cancellation_policy": "50% refund up to 14 days before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000021",
-            "area": "Salt Lakes",
-            "city": "siwa",
-            "title": "Siwa Salt Lakes Float & Sunset",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000006",
-            "capacity": 15,
-            "category": "nature_hike",
-            "includes": "Transport within Siwa, tea",
-            "cover_url": "https://picsum.photos/seed/masar-salt/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 600.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Float in the turquoise salt pools, then catch the sunset at Fatnas island.",
-            "distance_km": 3.00,
-            "meeting_lat": 29.16500,
-            "meeting_lng": 25.49500,
-            "start_offset": 1684800000,
-            "approval_mode": "auto",
-            "what_to_bring": "Swimwear, towel, fresh water to rinse",
-            "family_friendly": true,
-            "meeting_address": "Salt lakes car park",
-            "duration_minutes": 240,
-            "cancellation_policy": "Full refund up to 48 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000022",
-            "area": "Blue Hole",
-            "city": "dahab",
-            "title": "Dahab Blue Hole Coastal Hike",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "capacity": 12,
-            "category": "nature_hike",
-            "includes": "Guide, snorkel gear",
-            "cover_url": "https://picsum.photos/seed/masar-bluehole/1200/800",
-            "languages": [
-                "en",
-                "ar"
-            ],
-            "price_egp": 300.00,
-            "difficulty": "moderate",
-            "end_offset": null,
-            "women_only": false,
-            "description": "A coastal trail from the Blue Hole towards Ras Abu Galum with snorkelling breaks along the reef.",
-            "distance_km": 12.00,
-            "meeting_lat": 28.57220,
-            "meeting_lng": 34.53790,
-            "start_offset": 1400400000,
-            "approval_mode": "auto",
-            "what_to_bring": "Swimwear, water shoes, 3L water",
-            "family_friendly": false,
-            "meeting_address": "Blue Hole car park",
-            "duration_minutes": 300,
-            "cancellation_policy": "Full refund up to 48 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000023",
-            "area": "St. Catherine",
-            "city": "south_sinai",
-            "title": "Mount Sinai Sunrise Trek",
-            "status": "published",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "capacity": 8,
-            "category": "nature_hike",
-            "includes": "Bedouin guide, tea at the summit",
-            "cover_url": "https://picsum.photos/seed/masar-sinai/1200/800",
-            "languages": [
-                "en",
-                "ar"
-            ],
-            "price_egp": 700.00,
-            "difficulty": "hard",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Night ascent of Mount Sinai via the camel path, sunrise at the summit and descent by the 3,750 Steps of Repentance to St. Catherine's Monastery.",
-            "distance_km": 14.00,
-            "meeting_lat": 28.55600,
-            "meeting_lng": 33.97500,
-            "start_offset": 1465200000,
-            "approval_mode": "manual",
-            "what_to_bring": "Headlamp, warm jacket, gloves, 2L water",
-            "family_friendly": false,
-            "meeting_address": "St. Catherine's Monastery car park",
-            "duration_minutes": 420,
-            "cancellation_policy": "Full refund up to 72 hours before."
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000024",
-            "area": "Gamaleya",
-            "city": "cairo",
-            "title": "Al-Muizz by Night",
-            "status": "completed",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "capacity": 20,
-            "category": "heritage_walk",
-            "includes": null,
-            "cover_url": "https://picsum.photos/seed/masar-muizznight/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 0.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "The lit-up mosques and sabils of Al-Muizz after dark.",
-            "distance_km": 2.00,
-            "meeting_lat": 30.04970,
-            "meeting_lng": 31.26140,
-            "start_offset": -806400000,
-            "approval_mode": "auto",
-            "what_to_bring": null,
-            "family_friendly": true,
-            "meeting_address": "Qalawun complex",
-            "duration_minutes": 120,
-            "cancellation_policy": null
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000025",
-            "area": "Maadi",
-            "city": "cairo",
-            "title": "Wadi Degla Sunset Hike",
-            "status": "completed",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "capacity": 25,
-            "category": "nature_hike",
-            "includes": null,
-            "cover_url": "https://picsum.photos/seed/masar-deglasunset/1200/800",
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "price_egp": 0.00,
-            "difficulty": "moderate",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Short canyon hike timed for sunset over the cliffs.",
-            "distance_km": 7.00,
-            "meeting_lat": 29.95800,
-            "meeting_lng": 31.32000,
-            "start_offset": -475200000,
-            "approval_mode": "auto",
-            "what_to_bring": null,
-            "family_friendly": false,
-            "meeting_address": "Wadi Degla main gate",
-            "duration_minutes": 180,
-            "cancellation_policy": null
-        },
-        {
-            "id": "b0000000-0000-4000-8000-000000000026",
-            "area": "Downtown",
-            "city": "cairo",
-            "title": "Downtown Cafés & Bakeries",
-            "status": "completed",
-            "host_id": "a0000000-0000-4000-8000-000000000003",
-            "capacity": 10,
-            "category": "food_walk",
-            "includes": "Tastings and coffee",
-            "cover_url": "https://picsum.photos/seed/masar-cafes/1200/800",
-            "languages": [
-                "en",
-                "ar"
-            ],
-            "price_egp": 250.00,
-            "difficulty": "easy",
-            "end_offset": null,
-            "women_only": false,
-            "description": "Groppi, Café Riche, Le Grillon and a few bakeries locals swear by.",
-            "distance_km": 2.00,
-            "meeting_lat": 30.04780,
-            "meeting_lng": 31.24020,
-            "start_offset": -230400000,
-            "approval_mode": "auto",
-            "what_to_bring": null,
-            "family_friendly": false,
-            "meeting_address": "Groppi, Talaat Harb Square",
-            "duration_minutes": 150,
-            "cancellation_policy": null
-        }
-    ],
-    "photos": [
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000001-1/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 1
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000001-2/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 2
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000001-3/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000001",
-            "sort_order": 3
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000003-1/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000003",
-            "sort_order": 1
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000003-2/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000003",
-            "sort_order": 2
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000003-3/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000003",
-            "sort_order": 3
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000006-1/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000006",
-            "sort_order": 1
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000006-2/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000006",
-            "sort_order": 2
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000006-3/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000006",
-            "sort_order": 3
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000017-1/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000017",
-            "sort_order": 1
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000017-2/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000017",
-            "sort_order": 2
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000017-3/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000017",
-            "sort_order": 3
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000020-1/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000020",
-            "sort_order": 1
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000020-2/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000020",
-            "sort_order": 2
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000020-3/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000020",
-            "sort_order": 3
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000023-1/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000023",
-            "sort_order": 1
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000023-2/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000023",
-            "sort_order": 2
-        },
-        {
-            "url": "https://picsum.photos/seed/b0000000000040008000000000000023-3/1200/800",
-            "event_id": "b0000000-0000-4000-8000-000000000023",
-            "sort_order": 3
-        }
-    ],
-    "reviews": [
-        {
-            "rating": 5,
-            "comment": "Nour brings every building to life. Already booked the next one.",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000024",
-            "reviewer_id": "c0000000-0000-4000-8000-000000000001"
-        },
-        {
-            "rating": 5,
-            "comment": "تجربة رائعة، شرح ممتع جداً والمكان ساحر بالليل.",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000024",
-            "reviewer_id": "c0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "rating": 4,
-            "comment": "Great stories, a bit crowded near Qalawun.",
-            "host_id": "a0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000024",
-            "reviewer_id": "c0000000-0000-4000-8000-000000000005"
-        },
-        {
-            "rating": 5,
-            "comment": "Perfect pace and a stunning sunset.",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "event_id": "b0000000-0000-4000-8000-000000000025",
-            "reviewer_id": "c0000000-0000-4000-8000-000000000004"
-        },
-        {
-            "rating": 4,
-            "comment": "يوسف منظم جداً. محتاجين مية أكتر المرة الجاية!",
-            "host_id": "a0000000-0000-4000-8000-000000000004",
-            "event_id": "b0000000-0000-4000-8000-000000000025",
-            "reviewer_id": "c0000000-0000-4000-8000-000000000008"
-        },
-        {
-            "rating": 4,
-            "comment": "Delicious. Groppi was a highlight.",
-            "host_id": "a0000000-0000-4000-8000-000000000003",
-            "event_id": "b0000000-0000-4000-8000-000000000026",
-            "reviewer_id": "c0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "rating": 5,
-            "comment": "I would never have found half of these places on my own.",
-            "host_id": "a0000000-0000-4000-8000-000000000003",
-            "event_id": "b0000000-0000-4000-8000-000000000026",
-            "reviewer_id": "c0000000-0000-4000-8000-000000000007"
-        }
-    ],
-    "accounts": [
-        {
-            "email": "ahmed@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000001"
-        },
-        {
-            "email": "ali@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000008"
-        },
-        {
-            "email": "dina@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000007"
-        },
-        {
-            "email": "hana@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000003"
-        },
-        {
-            "email": "karim@masar.demo",
-            "user_id": "a0000000-0000-4000-8000-000000000003"
-        },
-        {
-            "email": "laila@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "email": "mahmoud@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000004"
-        },
-        {
-            "email": "mariam@masar.demo",
-            "user_id": "a0000000-0000-4000-8000-000000000005"
-        },
-        {
-            "email": "nour@masar.demo",
-            "user_id": "a0000000-0000-4000-8000-000000000001"
-        },
-        {
-            "email": "omar@masar.demo",
-            "user_id": "a0000000-0000-4000-8000-000000000006"
-        },
-        {
-            "email": "salma@masar.demo",
-            "user_id": "a0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "email": "sara@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000005"
-        },
-        {
-            "email": "tarek@masar.demo",
-            "user_id": "c0000000-0000-4000-8000-000000000006"
-        },
-        {
-            "email": "youssef@masar.demo",
-            "user_id": "a0000000-0000-4000-8000-000000000004"
-        }
-    ],
-    "profiles": [
-        {
-            "id": "a0000000-0000-4000-8000-000000000001",
-            "bio": "Architect and Islamic Cairo storyteller. Ten years walking the old city.",
-            "city": "cairo",
-            "name": "Nour El-Din Hassan",
-            "is_host": true,
-            "interests": [
-                "heritage",
-                "architecture",
-                "history"
-            ],
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000001",
-            "host_verified": true
-        },
-        {
-            "id": "a0000000-0000-4000-8000-000000000002",
-            "bio": "Street photographer. I run women-only sunrise photo walks around Cairo.",
-            "city": "cairo",
-            "name": "Salma Adel",
-            "is_host": true,
-            "interests": [
-                "photography",
-                "heritage"
-            ],
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000002",
-            "host_verified": true
-        },
-        {
-            "id": "a0000000-0000-4000-8000-000000000003",
-            "bio": "Food writer. If it is fried, stuffed or soaked in syrup, I know where to find it.",
-            "city": "cairo",
-            "name": "Karim Mostafa",
-            "is_host": true,
-            "interests": [
-                "food",
-                "culture"
-            ],
-            "languages": [
-                "ar",
-                "en",
-                "fr"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000003",
-            "host_verified": true
-        },
-        {
-            "id": "a0000000-0000-4000-8000-000000000004",
-            "bio": "Mountain guide and wilderness first responder. Wadi Degla regular, Sinai at heart.",
-            "city": "cairo",
-            "name": "Youssef Fathy",
-            "is_host": true,
-            "interests": [
-                "hiking",
-                "nature",
-                "camping"
-            ],
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000004",
-            "host_verified": true
-        },
-        {
-            "id": "a0000000-0000-4000-8000-000000000005",
-            "bio": "Alexandrian born and raised. Sea, history and the best fish in town.",
-            "city": "alexandria",
-            "name": "Mariam Gamal",
-            "is_host": true,
-            "interests": [
-                "heritage",
-                "food",
-                "sea"
-            ],
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000005",
-            "host_verified": false
-        },
-        {
-            "id": "a0000000-0000-4000-8000-000000000006",
-            "bio": "Desert trips to Siwa and Fayoum with local families and campfires.",
-            "city": "siwa",
-            "name": "Omar Siwi",
-            "is_host": true,
-            "interests": [
-                "desert",
-                "camping",
-                "stargazing"
-            ],
-            "languages": [
-                "ar",
-                "en",
-                "de"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000006",
-            "host_verified": true
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000001",
-            "bio": "Weekend walker, weekday engineer.",
-            "city": "cairo",
-            "name": "Ahmed Samir",
-            "is_host": false,
-            "interests": [
-                "heritage",
-                "hiking"
-            ],
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000001",
-            "host_verified": false
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000002",
-            "bio": "Learning Cairo one street at a time.",
-            "city": "cairo",
-            "name": "Laila Hamdy",
-            "is_host": false,
-            "interests": [
-                "photography",
-                "food"
-            ],
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000002",
-            "host_verified": false
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000003",
-            "bio": null,
-            "city": "giza",
-            "name": "Hana Mansour",
-            "is_host": false,
-            "interests": [
-                "nature"
-            ],
-            "languages": [
-                "ar"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000003",
-            "host_verified": false
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000004",
-            "bio": "Trail runner.",
-            "city": "cairo",
-            "name": "Mahmoud Ezzat",
-            "is_host": false,
-            "interests": [
-                "hiking"
-            ],
-            "languages": [
-                "ar",
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000004",
-            "host_verified": false
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000005",
-            "bio": "Design student. Love old buildings.",
-            "city": "cairo",
-            "name": "Sara Khaled",
-            "is_host": false,
-            "interests": [
-                "architecture",
-                "photography"
-            ],
-            "languages": [
-                "en",
-                "ar"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000005",
-            "host_verified": false
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000006",
-            "bio": null,
-            "city": "alexandria",
-            "name": "Tarek Nabil",
-            "is_host": false,
-            "interests": [
-                "food",
-                "sea"
-            ],
-            "languages": [
-                "ar"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000006",
-            "host_verified": false
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000007",
-            "bio": "Expat in Cairo, trying everything.",
-            "city": "cairo",
-            "name": "Dina Raafat",
-            "is_host": false,
-            "interests": [
-                "culture",
-                "food"
-            ],
-            "languages": [
-                "en"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000007",
-            "host_verified": false
-        },
-        {
-            "id": "c0000000-0000-4000-8000-000000000008",
-            "bio": null,
-            "city": "cairo",
-            "name": "Ali Hegazy",
-            "is_host": false,
-            "interests": [
-                "desert"
-            ],
-            "languages": [
-                "ar"
-            ],
-            "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000008",
-            "host_verified": false
-        }
-    ],
-    "applications": [
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000001"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000005",
-            "event_id": "b0000000-0000-4000-8000-000000000001"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000007",
-            "event_id": "b0000000-0000-4000-8000-000000000001"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000008",
-            "event_id": "b0000000-0000-4000-8000-000000000001"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "status": "approved",
-            "message": "Vegetarian here!",
-            "user_id": "c0000000-0000-4000-8000-000000000002",
-            "event_id": "b0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000003",
-            "event_id": "b0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000004",
-            "event_id": "b0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000005",
-            "event_id": "b0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000006",
-            "event_id": "b0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "status": "pending",
-            "message": "Any chance a seat opens up?",
-            "user_id": "c0000000-0000-4000-8000-000000000007",
-            "event_id": "b0000000-0000-4000-8000-000000000002"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000002",
-            "event_id": "b0000000-0000-4000-8000-000000000005"
-        },
-        {
-            "status": "pending",
-            "message": "First photo walk for me",
-            "user_id": "c0000000-0000-4000-8000-000000000003",
-            "event_id": "b0000000-0000-4000-8000-000000000005"
-        },
-        {
-            "status": "pending",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000005",
-            "event_id": "b0000000-0000-4000-8000-000000000005"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000006"
-        },
-        {
-            "status": "cancelled",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000002",
-            "event_id": "b0000000-0000-4000-8000-000000000006"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000004",
-            "event_id": "b0000000-0000-4000-8000-000000000006"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000006",
-            "event_id": "b0000000-0000-4000-8000-000000000006"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000008",
-            "event_id": "b0000000-0000-4000-8000-000000000006"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000003",
-            "event_id": "b0000000-0000-4000-8000-000000000017"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000006",
-            "event_id": "b0000000-0000-4000-8000-000000000017"
-        },
-        {
-            "status": "rejected",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000005",
-            "event_id": "b0000000-0000-4000-8000-000000000020"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000007",
-            "event_id": "b0000000-0000-4000-8000-000000000020"
-        },
-        {
-            "status": "approved",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000004",
-            "event_id": "b0000000-0000-4000-8000-000000000023"
-        },
-        {
-            "status": "pending",
-            "message": "I have done Kilimanjaro",
-            "user_id": "c0000000-0000-4000-8000-000000000008",
-            "event_id": "b0000000-0000-4000-8000-000000000023"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000024"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000002",
-            "event_id": "b0000000-0000-4000-8000-000000000024"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000005",
-            "event_id": "b0000000-0000-4000-8000-000000000024"
-        },
-        {
-            "status": "no_show",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000006",
-            "event_id": "b0000000-0000-4000-8000-000000000024"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000025"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000004",
-            "event_id": "b0000000-0000-4000-8000-000000000025"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000008",
-            "event_id": "b0000000-0000-4000-8000-000000000025"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000001",
-            "event_id": "b0000000-0000-4000-8000-000000000026"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000002",
-            "event_id": "b0000000-0000-4000-8000-000000000026"
-        },
-        {
-            "status": "attended",
-            "message": null,
-            "user_id": "c0000000-0000-4000-8000-000000000007",
-            "event_id": "b0000000-0000-4000-8000-000000000026"
-        }
-    ]
+  "stops": [
+    {
+      "lat": 30.0548,
+      "lng": 31.2627,
+      "name": "Bab al-Futuh",
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "sort_order": 1
+    },
+    {
+      "lat": 30.0525,
+      "lng": 31.262,
+      "name": "Al-Aqmar Mosque",
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "sort_order": 2
+    },
+    {
+      "lat": 30.052,
+      "lng": 31.2632,
+      "name": "Beit al-Suhaymi",
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "sort_order": 3
+    },
+    {
+      "lat": 30.0497,
+      "lng": 31.2614,
+      "name": "Qalawun Complex",
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "sort_order": 4
+    },
+    {
+      "lat": 30.0428,
+      "lng": 31.2577,
+      "name": "Bab Zuweila",
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "sort_order": 5
+    },
+    {
+      "lat": 30.0053,
+      "lng": 31.23,
+      "name": "The Hanging Church",
+      "event_id": "b0000000-0000-4000-8000-000000000003",
+      "sort_order": 1
+    },
+    {
+      "lat": 30.006,
+      "lng": 31.231,
+      "name": "Abu Serga Church",
+      "event_id": "b0000000-0000-4000-8000-000000000003",
+      "sort_order": 2
+    },
+    {
+      "lat": 30.0057,
+      "lng": 31.2318,
+      "name": "Ben Ezra Synagogue",
+      "event_id": "b0000000-0000-4000-8000-000000000003",
+      "sort_order": 3
+    },
+    {
+      "lat": 30.0102,
+      "lng": 31.2335,
+      "name": "Mosque of Amr ibn al-As",
+      "event_id": "b0000000-0000-4000-8000-000000000003",
+      "sort_order": 4
+    },
+    {
+      "lat": 30.05,
+      "lng": 31.2425,
+      "name": "Cosmopolitan Hotel",
+      "event_id": "b0000000-0000-4000-8000-000000000004",
+      "sort_order": 1
+    },
+    {
+      "lat": 30.052,
+      "lng": 31.2462,
+      "name": "Emad El-Din Street",
+      "event_id": "b0000000-0000-4000-8000-000000000004",
+      "sort_order": 2
+    },
+    {
+      "lat": 30.0505,
+      "lng": 31.241,
+      "name": "Cinema Radio",
+      "event_id": "b0000000-0000-4000-8000-000000000004",
+      "sort_order": 3
+    },
+    {
+      "lat": 30.032,
+      "lng": 31.2565,
+      "name": "Sultan Hassan Mosque",
+      "event_id": "b0000000-0000-4000-8000-000000000008",
+      "sort_order": 1
+    },
+    {
+      "lat": 30.0325,
+      "lng": 31.2575,
+      "name": "Al-Rifai Mosque",
+      "event_id": "b0000000-0000-4000-8000-000000000008",
+      "sort_order": 2
+    },
+    {
+      "lat": 30.0287,
+      "lng": 31.2599,
+      "name": "Muhammad Ali Mosque",
+      "event_id": "b0000000-0000-4000-8000-000000000008",
+      "sort_order": 3
+    },
+    {
+      "lat": 31.214,
+      "lng": 29.8856,
+      "name": "Qaitbay Citadel",
+      "event_id": "b0000000-0000-4000-8000-000000000013",
+      "sort_order": 1
+    },
+    {
+      "lat": 31.205,
+      "lng": 29.889,
+      "name": "Anfoushi fishing harbour",
+      "event_id": "b0000000-0000-4000-8000-000000000013",
+      "sort_order": 2
+    },
+    {
+      "lat": 31.2089,
+      "lng": 29.9092,
+      "name": "Bibliotheca Alexandrina",
+      "event_id": "b0000000-0000-4000-8000-000000000016",
+      "sort_order": 1
+    },
+    {
+      "lat": 31.1945,
+      "lng": 29.904,
+      "name": "Kom el-Dikka Amphitheatre",
+      "event_id": "b0000000-0000-4000-8000-000000000016",
+      "sort_order": 2
+    },
+    {
+      "lat": 31.1825,
+      "lng": 29.8963,
+      "name": "Pompey's Pillar",
+      "event_id": "b0000000-0000-4000-8000-000000000016",
+      "sort_order": 3
+    },
+    {
+      "lat": 28.541,
+      "lng": 33.973,
+      "name": "Elijah's Basin",
+      "event_id": "b0000000-0000-4000-8000-000000000023",
+      "sort_order": 1
+    },
+    {
+      "lat": 28.5394,
+      "lng": 33.9755,
+      "name": "Summit chapel",
+      "event_id": "b0000000-0000-4000-8000-000000000023",
+      "sort_order": 2
+    }
+  ],
+  "cities": [
+    {
+      "slug": "cairo",
+      "name_ar": "القاهرة",
+      "name_en": "Cairo"
+    },
+    {
+      "slug": "giza",
+      "name_ar": "الجيزة",
+      "name_en": "Giza"
+    },
+    {
+      "slug": "alexandria",
+      "name_ar": "الإسكندرية",
+      "name_en": "Alexandria"
+    },
+    {
+      "slug": "fayoum",
+      "name_ar": "الفيوم",
+      "name_en": "Fayoum"
+    },
+    {
+      "slug": "siwa",
+      "name_ar": "سيوة",
+      "name_en": "Siwa"
+    },
+    {
+      "slug": "dahab",
+      "name_ar": "دهب",
+      "name_en": "Dahab"
+    },
+    {
+      "slug": "south_sinai",
+      "name_ar": "جنوب سيناء",
+      "name_en": "South Sinai"
+    },
+    {
+      "slug": "luxor",
+      "name_ar": "الأقصر",
+      "name_en": "Luxor"
+    },
+    {
+      "slug": "aswan",
+      "name_ar": "أسوان",
+      "name_en": "Aswan"
+    },
+    {
+      "slug": "red_sea",
+      "name_ar": "البحر الأحمر",
+      "name_en": "Red Sea"
+    }
+  ],
+  "events": [
+    {
+      "id": "b0000000-0000-4000-8000-000000000001",
+      "area": "Gamaleya",
+      "city": "cairo",
+      "title": "Al-Muizz Street at Golden Hour",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "capacity": 20,
+      "category": "heritage_walk",
+      "includes": "Guiding, Arabic coffee at the end",
+      "cover_url": "/images/events/muizz-3.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 0.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Walk the full length of Al-Muizz li-Din Allah Street from Bab al-Futuh to Bab Zuweila as the sun sets over a thousand years of minarets. We stop at the Qalawun complex, Beit al-Suhaymi and the Al-Aqmar mosque, with stories of the Fatimid and Mamluk city.",
+      "distance_km": 2.5,
+      "meeting_lat": 30.0548,
+      "meeting_lng": 31.2627,
+      "start_offset": 306000000,
+      "approval_mode": "auto",
+      "what_to_bring": "Comfortable shoes, water, modest clothing for mosque visits",
+      "family_friendly": true,
+      "meeting_address": "Bab al-Futuh gate, Al-Muizz Street",
+      "duration_minutes": 150,
+      "cancellation_policy": "Free event — please cancel in the app if you cannot come."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000002",
+      "area": "Khan el-Khalili",
+      "city": "cairo",
+      "title": "Khan el-Khalili Food Crawl",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000003",
+      "capacity": 6,
+      "category": "food_walk",
+      "includes": "All tastings and drinks",
+      "cover_url": "/images/events/khan-el-khalili.jpg",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "price_egp": 350.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Eight tastings in three hours: ful and taameya, hawawshi, feteer, sobia, roz bel laban and the legendary El Fishawy tea. Vegetarian options at every stop.",
+      "distance_km": 2.0,
+      "meeting_lat": 30.0477,
+      "meeting_lng": 31.2622,
+      "start_offset": 228600000,
+      "approval_mode": "manual",
+      "what_to_bring": "An empty stomach",
+      "family_friendly": false,
+      "meeting_address": "In front of Al-Hussein Mosque",
+      "duration_minutes": 180,
+      "cancellation_policy": "Full refund up to 48 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000003",
+      "area": "Old Cairo",
+      "city": "cairo",
+      "title": "Coptic Cairo & the Religions Compound",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "capacity": 15,
+      "category": "heritage_walk",
+      "includes": "Guiding, entry tickets",
+      "cover_url": "/images/events/coptic-cairo-2.jpg",
+      "languages": [
+        "en"
+      ],
+      "price_egp": 200.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "The Hanging Church, Abu Serga, the Ben Ezra Synagogue and the Mosque of Amr ibn al-As — two thousand years of faith within a few hundred metres.",
+      "distance_km": 2.0,
+      "meeting_lat": 30.0053,
+      "meeting_lng": 31.23,
+      "start_offset": 457200000,
+      "approval_mode": "auto",
+      "what_to_bring": "Modest clothing, water",
+      "family_friendly": true,
+      "meeting_address": "Mar Girgis metro station exit",
+      "duration_minutes": 180,
+      "cancellation_policy": "Full refund up to 24 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000004",
+      "area": "Downtown",
+      "city": "cairo",
+      "title": "Downtown Belle Époque Architecture Walk",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "capacity": 18,
+      "category": "heritage_walk",
+      "includes": "Guiding, printed map",
+      "cover_url": "/images/events/downtown.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 150.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Khedival Cairo's Paris-on-the-Nile: Talaat Harb, Emad El-Din, the Cosmopolitan Hotel and hidden passages full of Art Deco details.",
+      "distance_km": 3.0,
+      "meeting_lat": 30.049,
+      "meeting_lng": 31.2408,
+      "start_offset": 568800000,
+      "approval_mode": "auto",
+      "what_to_bring": "Camera",
+      "family_friendly": true,
+      "meeting_address": "Talaat Harb Square, by the statue",
+      "duration_minutes": 120,
+      "cancellation_policy": "Full refund up to 24 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000005",
+      "area": "Zamalek",
+      "city": "cairo",
+      "title": "Women's Sunrise Photo Walk in Zamalek",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000002",
+      "capacity": 6,
+      "category": "photo_walk",
+      "includes": "Coffee and photo critique",
+      "cover_url": "/images/events/zamalek.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 100.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": true,
+      "description": "A calm, women-only morning shooting the Nile, the Cairo Tower and Zamalek's villas in the soft first light. Composition tips for phones and cameras.",
+      "distance_km": 3.0,
+      "meeting_lat": 30.0459,
+      "meeting_lng": 31.2243,
+      "start_offset": 356400000,
+      "approval_mode": "manual",
+      "what_to_bring": "Phone or camera, charged battery",
+      "family_friendly": false,
+      "meeting_address": "Cairo Tower main gate",
+      "duration_minutes": 120,
+      "cancellation_policy": "Full refund up to 24 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000006",
+      "area": "Maadi",
+      "city": "cairo",
+      "title": "Wadi Degla Canyon Hike",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "capacity": 30,
+      "category": "nature_hike",
+      "includes": "Guide, first aid",
+      "cover_url": "/images/events/wadi-degla.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 0.0,
+      "difficulty": "moderate",
+      "end_offset": null,
+      "women_only": false,
+      "description": "A 10 km loop through the limestone canyon of Wadi Degla protectorate, looking for fossils and desert foxes. Steady pace with regular breaks.",
+      "distance_km": 10.0,
+      "meeting_lat": 29.958,
+      "meeting_lng": 31.32,
+      "start_offset": 273600000,
+      "approval_mode": "auto",
+      "what_to_bring": "2L water, snacks, hat, sunscreen, hiking shoes",
+      "family_friendly": false,
+      "meeting_address": "Wadi Degla main gate (protectorate entrance)",
+      "duration_minutes": 240,
+      "cancellation_policy": "Free event — please cancel if you can't make it."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000007",
+      "area": "Al-Darb al-Ahmar",
+      "city": "cairo",
+      "title": "Al-Azhar Park Family Walk & Picnic",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "capacity": 40,
+      "category": "nature_hike",
+      "includes": "Games for kids",
+      "cover_url": "/images/events/azhar-park.jpg",
+      "languages": [
+        "ar"
+      ],
+      "price_egp": 0.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "An easy loop around Al-Azhar Park with views of the Citadel and the Ayyubid wall, then a picnic on the lawns. Kids welcome.",
+      "distance_km": 3.0,
+      "meeting_lat": 30.041,
+      "meeting_lng": 31.264,
+      "start_offset": 734400000,
+      "approval_mode": "auto",
+      "what_to_bring": "Picnic blanket, snacks, park entry ticket",
+      "family_friendly": true,
+      "meeting_address": "Al-Azhar Park main gate, Salah Salem",
+      "duration_minutes": 150,
+      "cancellation_policy": "Free event."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000008",
+      "area": "Citadel",
+      "city": "cairo",
+      "title": "The Citadel & Sultan Hassan",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "capacity": 15,
+      "category": "heritage_walk",
+      "includes": "Guiding, entry tickets",
+      "cover_url": "/images/events/citadel.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 250.0,
+      "difficulty": "moderate",
+      "end_offset": null,
+      "women_only": false,
+      "description": "From the Mosque of Sultan Hassan and Al-Rifai to the Citadel of Salah al-Din and the Muhammad Ali Mosque, with the best view in Cairo.",
+      "distance_km": 4.0,
+      "meeting_lat": 30.032,
+      "meeting_lng": 31.2565,
+      "start_offset": 887400000,
+      "approval_mode": "auto",
+      "what_to_bring": "Water, modest clothing",
+      "family_friendly": true,
+      "meeting_address": "Sultan Hassan Mosque entrance",
+      "duration_minutes": 210,
+      "cancellation_policy": "Full refund up to 24 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000009",
+      "area": "Al-Darb al-Ahmar",
+      "city": "cairo",
+      "title": "Bab Zuweila & the Tentmakers' Street",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000002",
+      "capacity": 12,
+      "category": "photo_walk",
+      "includes": "Entry to Bab Zuweila",
+      "cover_url": "/images/events/bab-zuweila.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 180.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Climb the minarets of Bab Zuweila, then photograph the appliqué artisans of Al-Khayamiya, Cairo's last covered market.",
+      "distance_km": 1.5,
+      "meeting_lat": 30.0428,
+      "meeting_lng": 31.2577,
+      "start_offset": 1062000000,
+      "approval_mode": "auto",
+      "what_to_bring": "Camera, small cash for purchases",
+      "family_friendly": false,
+      "meeting_address": "Bab Zuweila gate",
+      "duration_minutes": 150,
+      "cancellation_policy": "Full refund up to 24 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000010",
+      "area": "Sayeda Zeinab",
+      "city": "cairo",
+      "title": "Sayeda Zeinab Late-Night Street Food",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000003",
+      "capacity": 10,
+      "category": "food_walk",
+      "includes": "All food and drinks",
+      "cover_url": "/images/events/sayeda-zeinab.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 300.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Koshary, kebda Iskandarani, mombar and a sweet finish with basbousa — Cairo eats after dark.",
+      "distance_km": 1.5,
+      "meeting_lat": 30.0293,
+      "meeting_lng": 31.2421,
+      "start_offset": 838800000,
+      "approval_mode": "manual",
+      "what_to_bring": "Wet wipes",
+      "family_friendly": false,
+      "meeting_address": "Sayeda Zeinab Mosque square",
+      "duration_minutes": 150,
+      "cancellation_policy": "Full refund up to 48 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000011",
+      "area": "Giza Plateau",
+      "city": "giza",
+      "title": "Pyramids Desert Plateau Walk",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "capacity": 20,
+      "category": "nature_hike",
+      "includes": "Guide, plateau entry ticket",
+      "cover_url": "/images/events/giza-pyramids.jpg",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "price_egp": 400.0,
+      "difficulty": "moderate",
+      "end_offset": null,
+      "women_only": false,
+      "description": "A desert walk across the Giza plateau to the panorama point, away from the crowds, finishing at the Sphinx.",
+      "distance_km": 8.0,
+      "meeting_lat": 29.9792,
+      "meeting_lng": 31.1342,
+      "start_offset": 621000000,
+      "approval_mode": "auto",
+      "what_to_bring": "Hat, sunscreen, 2L water",
+      "family_friendly": true,
+      "meeting_address": "Pyramids main gate (Mena House side)",
+      "duration_minutes": 210,
+      "cancellation_policy": "Full refund up to 48 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000012",
+      "area": "Saqqara",
+      "city": "giza",
+      "title": "Saqqara & Dahshur Day Trip",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "capacity": 14,
+      "category": "city_trip",
+      "includes": "Transport from Cairo, lunch, entry tickets",
+      "cover_url": "/images/events/saqqara.jpg",
+      "languages": [
+        "en"
+      ],
+      "price_egp": 950.0,
+      "difficulty": "moderate",
+      "end_offset": null,
+      "women_only": false,
+      "description": "The Step Pyramid of Djoser, the Serapeum and the Bent and Red Pyramids of Dahshur — the pyramids before Giza.",
+      "distance_km": 6.0,
+      "meeting_lat": 29.8713,
+      "meeting_lng": 31.2165,
+      "start_offset": 968400000,
+      "approval_mode": "manual",
+      "what_to_bring": "Hat, water, cash for tips",
+      "family_friendly": true,
+      "meeting_address": "Saqqara ticket office",
+      "duration_minutes": 540,
+      "cancellation_policy": "50% refund up to 72 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000013",
+      "area": "Anfoushi",
+      "city": "alexandria",
+      "title": "Qaitbay Citadel & Anfoushi Sea Walk",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000005",
+      "capacity": 20,
+      "category": "heritage_walk",
+      "includes": "Guiding, citadel entry",
+      "cover_url": "/images/events/qaitbay.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 150.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "From the Citadel of Qaitbay, built on the ruins of the Pharos lighthouse, along the fishermen's harbour of Anfoushi.",
+      "distance_km": 3.0,
+      "meeting_lat": 31.214,
+      "meeting_lng": 29.8856,
+      "start_offset": 394200000,
+      "approval_mode": "auto",
+      "what_to_bring": "Light jacket (sea breeze)",
+      "family_friendly": true,
+      "meeting_address": "Qaitbay Citadel gate",
+      "duration_minutes": 150,
+      "cancellation_policy": "Full refund up to 24 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000014",
+      "area": "Raml Station",
+      "city": "alexandria",
+      "title": "Alexandria Seafood & Sweets Walk",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000005",
+      "capacity": 12,
+      "category": "food_walk",
+      "includes": "All tastings",
+      "cover_url": "/images/events/alexandria-corniche.jpg",
+      "languages": [
+        "ar"
+      ],
+      "price_egp": 450.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Fried fish in Anfoushi, Mohamed Ahmed's ful, Délices pastries and Sabry ice-cream — Alexandria by the mouthful.",
+      "distance_km": 3.5,
+      "meeting_lat": 31.2006,
+      "meeting_lng": 29.903,
+      "start_offset": 468000000,
+      "approval_mode": "manual",
+      "what_to_bring": "Appetite",
+      "family_friendly": false,
+      "meeting_address": "Raml Station tram stop",
+      "duration_minutes": 210,
+      "cancellation_policy": "Full refund up to 48 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000015",
+      "area": "Montazah",
+      "city": "alexandria",
+      "title": "Montazah Gardens Sunset Walk",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000005",
+      "capacity": 25,
+      "category": "nature_hike",
+      "includes": null,
+      "cover_url": "/images/events/montazah.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 0.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "An easy stroll through the royal gardens of Montazah to the palace and the sea at sunset.",
+      "distance_km": 4.0,
+      "meeting_lat": 31.2885,
+      "meeting_lng": 30.0164,
+      "start_offset": 1170000000,
+      "approval_mode": "auto",
+      "what_to_bring": "Garden entry ticket",
+      "family_friendly": true,
+      "meeting_address": "Montazah main gate",
+      "duration_minutes": 120,
+      "cancellation_policy": "Free event."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000016",
+      "area": "Shatby",
+      "city": "alexandria",
+      "title": "Bibliotheca & Roman Alexandria",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000005",
+      "capacity": 15,
+      "category": "heritage_walk",
+      "includes": "Guiding, entry tickets",
+      "cover_url": "/images/events/bibliotheca.jpg",
+      "languages": [
+        "en",
+        "fr"
+      ],
+      "price_egp": 250.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "The new Library of Alexandria, the Roman Amphitheatre of Kom el-Dikka and Pompey's Pillar.",
+      "distance_km": 5.0,
+      "meeting_lat": 31.2089,
+      "meeting_lng": 29.9092,
+      "start_offset": 1234800000,
+      "approval_mode": "auto",
+      "what_to_bring": "Comfortable shoes",
+      "family_friendly": true,
+      "meeting_address": "Bibliotheca Alexandrina plaza",
+      "duration_minutes": 240,
+      "cancellation_policy": "Full refund up to 24 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000017",
+      "area": "Wadi El Rayan",
+      "city": "fayoum",
+      "title": "Wadi El Rayan Waterfalls & Magic Lake",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000006",
+      "capacity": 20,
+      "category": "city_trip",
+      "includes": "Transport from Cairo, lunch, sandboards",
+      "cover_url": "/images/events/wadi-el-rayan-2.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 850.0,
+      "difficulty": "moderate",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Day trip to the only waterfalls in Egypt's Western Desert, sandboarding on the dunes and sunset at the Magic Lake.",
+      "distance_km": 5.0,
+      "meeting_lat": 29.1919,
+      "meeting_lng": 30.4183,
+      "start_offset": 540000000,
+      "approval_mode": "auto",
+      "what_to_bring": "Swimwear, towel, sunscreen",
+      "family_friendly": true,
+      "meeting_address": "Wadi El Rayan protectorate gate",
+      "duration_minutes": 600,
+      "cancellation_policy": "50% refund up to 72 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000018",
+      "area": "Tunis Village",
+      "city": "fayoum",
+      "title": "Tunis Village Pottery Weekend",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000006",
+      "capacity": 12,
+      "category": "multi_day_trip",
+      "includes": "Lodge, meals, pottery workshop",
+      "cover_url": "/images/events/tunis-village.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 2200.0,
+      "difficulty": "easy",
+      "end_offset": 1432800000,
+      "women_only": false,
+      "description": "Two days in the potters' village on Lake Qarun: a pottery workshop, a sunset walk on the lake shore and a night in an eco-lodge.",
+      "distance_km": 6.0,
+      "meeting_lat": 29.4122,
+      "meeting_lng": 30.5464,
+      "start_offset": 1321200000,
+      "approval_mode": "manual",
+      "what_to_bring": "Overnight bag, warm layer",
+      "family_friendly": true,
+      "meeting_address": "Tunis Village main square",
+      "duration_minutes": 1860,
+      "cancellation_policy": "50% refund up to 7 days before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000019",
+      "area": "Wadi Al-Hitan",
+      "city": "fayoum",
+      "title": "Wadi Al-Hitan Fossils & Stargazing",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000006",
+      "capacity": 16,
+      "category": "multi_day_trip",
+      "includes": "Camping gear, dinner, breakfast, telescope",
+      "cover_url": "/images/events/wadi-al-hitan.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 1800.0,
+      "difficulty": "moderate",
+      "end_offset": 892800000,
+      "women_only": false,
+      "description": "Walk among 40-million-year-old whale skeletons at the UNESCO site, then camp under the darkest skies near Cairo.",
+      "distance_km": 8.0,
+      "meeting_lat": 29.2708,
+      "meeting_lng": 30.0434,
+      "start_offset": 817200000,
+      "approval_mode": "auto",
+      "what_to_bring": "Sleeping bag, headlamp, warm jacket",
+      "family_friendly": false,
+      "meeting_address": "Wadi Al-Hitan visitor centre",
+      "duration_minutes": 1260,
+      "cancellation_policy": "50% refund up to 7 days before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000020",
+      "area": "Siwa Town",
+      "city": "siwa",
+      "title": "Siwa Oasis 4-Day Escape",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000006",
+      "capacity": 10,
+      "category": "multi_day_trip",
+      "includes": "Eco-lodge, all meals, 4x4 safari",
+      "cover_url": "/images/events/siwa.jpg",
+      "languages": [
+        "ar",
+        "en",
+        "de"
+      ],
+      "price_egp": 6500.0,
+      "difficulty": "moderate",
+      "end_offset": 1872000000,
+      "women_only": false,
+      "description": "Salt lakes, the Shali fortress, Cleopatra's spring, the Great Sand Sea and a Bedouin dinner under the stars.",
+      "distance_km": 25.0,
+      "meeting_lat": 29.2032,
+      "meeting_lng": 25.5195,
+      "start_offset": 1580400000,
+      "approval_mode": "manual",
+      "what_to_bring": "Swimwear, scarf, warm layer for nights",
+      "family_friendly": true,
+      "meeting_address": "Shali fortress, Siwa market square",
+      "duration_minutes": 4860,
+      "cancellation_policy": "50% refund up to 14 days before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000021",
+      "area": "Salt Lakes",
+      "city": "siwa",
+      "title": "Siwa Salt Lakes Float & Sunset",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000006",
+      "capacity": 15,
+      "category": "nature_hike",
+      "includes": "Transport within Siwa, tea",
+      "cover_url": "/images/events/siwa-salt-lake.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 600.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Float in the turquoise salt pools, then catch the sunset at Fatnas island.",
+      "distance_km": 3.0,
+      "meeting_lat": 29.165,
+      "meeting_lng": 25.495,
+      "start_offset": 1684800000,
+      "approval_mode": "auto",
+      "what_to_bring": "Swimwear, towel, fresh water to rinse",
+      "family_friendly": true,
+      "meeting_address": "Salt lakes car park",
+      "duration_minutes": 240,
+      "cancellation_policy": "Full refund up to 48 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000022",
+      "area": "Blue Hole",
+      "city": "dahab",
+      "title": "Dahab Blue Hole Coastal Hike",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "capacity": 12,
+      "category": "nature_hike",
+      "includes": "Guide, snorkel gear",
+      "cover_url": "/images/events/blue-hole-dahab.jpg",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "price_egp": 300.0,
+      "difficulty": "moderate",
+      "end_offset": null,
+      "women_only": false,
+      "description": "A coastal trail from the Blue Hole towards Ras Abu Galum with snorkelling breaks along the reef.",
+      "distance_km": 12.0,
+      "meeting_lat": 28.5722,
+      "meeting_lng": 34.5379,
+      "start_offset": 1400400000,
+      "approval_mode": "auto",
+      "what_to_bring": "Swimwear, water shoes, 3L water",
+      "family_friendly": false,
+      "meeting_address": "Blue Hole car park",
+      "duration_minutes": 300,
+      "cancellation_policy": "Full refund up to 48 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000023",
+      "area": "St. Catherine",
+      "city": "south_sinai",
+      "title": "Mount Sinai Sunrise Trek",
+      "status": "published",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "capacity": 8,
+      "category": "nature_hike",
+      "includes": "Bedouin guide, tea at the summit",
+      "cover_url": "/images/events/mount-sinai-2.jpg",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "price_egp": 700.0,
+      "difficulty": "hard",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Night ascent of Mount Sinai via the camel path, sunrise at the summit and descent by the 3,750 Steps of Repentance to St. Catherine's Monastery.",
+      "distance_km": 14.0,
+      "meeting_lat": 28.556,
+      "meeting_lng": 33.975,
+      "start_offset": 1465200000,
+      "approval_mode": "manual",
+      "what_to_bring": "Headlamp, warm jacket, gloves, 2L water",
+      "family_friendly": false,
+      "meeting_address": "St. Catherine's Monastery car park",
+      "duration_minutes": 420,
+      "cancellation_policy": "Full refund up to 72 hours before."
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000024",
+      "area": "Gamaleya",
+      "city": "cairo",
+      "title": "Al-Muizz by Night",
+      "status": "completed",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "capacity": 20,
+      "category": "heritage_walk",
+      "includes": null,
+      "cover_url": "/images/events/qalawun.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 0.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "The lit-up mosques and sabils of Al-Muizz after dark.",
+      "distance_km": 2.0,
+      "meeting_lat": 30.0497,
+      "meeting_lng": 31.2614,
+      "start_offset": -806400000,
+      "approval_mode": "auto",
+      "what_to_bring": null,
+      "family_friendly": true,
+      "meeting_address": "Qalawun complex",
+      "duration_minutes": 120,
+      "cancellation_policy": null
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000025",
+      "area": "Maadi",
+      "city": "cairo",
+      "title": "Wadi Degla Sunset Hike",
+      "status": "completed",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "capacity": 25,
+      "category": "nature_hike",
+      "includes": null,
+      "cover_url": "/images/events/wadi-degla-3.jpg",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "price_egp": 0.0,
+      "difficulty": "moderate",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Short canyon hike timed for sunset over the cliffs.",
+      "distance_km": 7.0,
+      "meeting_lat": 29.958,
+      "meeting_lng": 31.32,
+      "start_offset": -475200000,
+      "approval_mode": "auto",
+      "what_to_bring": null,
+      "family_friendly": false,
+      "meeting_address": "Wadi Degla main gate",
+      "duration_minutes": 180,
+      "cancellation_policy": null
+    },
+    {
+      "id": "b0000000-0000-4000-8000-000000000026",
+      "area": "Downtown",
+      "city": "cairo",
+      "title": "Downtown Cafés & Bakeries",
+      "status": "completed",
+      "host_id": "a0000000-0000-4000-8000-000000000003",
+      "capacity": 10,
+      "category": "food_walk",
+      "includes": "Tastings and coffee",
+      "cover_url": "/images/events/cafe-riche.jpg",
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "price_egp": 250.0,
+      "difficulty": "easy",
+      "end_offset": null,
+      "women_only": false,
+      "description": "Groppi, Café Riche, Le Grillon and a few bakeries locals swear by.",
+      "distance_km": 2.0,
+      "meeting_lat": 30.0478,
+      "meeting_lng": 31.2402,
+      "start_offset": -230400000,
+      "approval_mode": "auto",
+      "what_to_bring": null,
+      "family_friendly": false,
+      "meeting_address": "Groppi, Talaat Harb Square",
+      "duration_minutes": 150,
+      "cancellation_policy": null
+    }
+  ],
+  "photos": [
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "url": "/images/events/muizz-2.jpg",
+      "sort_order": 1
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "url": "/images/events/muizz-4.jpg",
+      "sort_order": 2
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000001",
+      "url": "/images/events/muizz.jpg",
+      "sort_order": 3
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000003",
+      "url": "/images/events/coptic-cairo.jpg",
+      "sort_order": 1
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000003",
+      "url": "/images/events/coptic-cairo-3.jpg",
+      "sort_order": 2
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000006",
+      "url": "/images/events/wadi-degla-2.jpg",
+      "sort_order": 1
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000006",
+      "url": "/images/events/wadi-degla-3.jpg",
+      "sort_order": 2
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000006",
+      "url": "/images/events/wadi-degla.jpg",
+      "sort_order": 3
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000017",
+      "url": "/images/events/wadi-el-rayan-3.jpg",
+      "sort_order": 1
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000017",
+      "url": "/images/events/wadi-el-rayan-4.jpg",
+      "sort_order": 2
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000017",
+      "url": "/images/events/wadi-el-rayan.jpg",
+      "sort_order": 3
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000020",
+      "url": "/images/events/siwa-2.jpg",
+      "sort_order": 1
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000020",
+      "url": "/images/events/siwa-3.jpg",
+      "sort_order": 2
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000020",
+      "url": "/images/events/siwa-4.jpg",
+      "sort_order": 3
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000023",
+      "url": "/images/events/mount-sinai.jpg",
+      "sort_order": 1
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000023",
+      "url": "/images/events/mount-sinai-3.jpg",
+      "sort_order": 2
+    },
+    {
+      "event_id": "b0000000-0000-4000-8000-000000000023",
+      "url": "/images/events/mount-sinai-4.jpg",
+      "sort_order": 3
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 5,
+      "comment": "Nour brings every building to life. Already booked the next one.",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000024",
+      "reviewer_id": "c0000000-0000-4000-8000-000000000001"
+    },
+    {
+      "rating": 5,
+      "comment": "تجربة رائعة، شرح ممتع جداً والمكان ساحر بالليل.",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000024",
+      "reviewer_id": "c0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "rating": 4,
+      "comment": "Great stories, a bit crowded near Qalawun.",
+      "host_id": "a0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000024",
+      "reviewer_id": "c0000000-0000-4000-8000-000000000005"
+    },
+    {
+      "rating": 5,
+      "comment": "Perfect pace and a stunning sunset.",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "event_id": "b0000000-0000-4000-8000-000000000025",
+      "reviewer_id": "c0000000-0000-4000-8000-000000000004"
+    },
+    {
+      "rating": 4,
+      "comment": "يوسف منظم جداً. محتاجين مية أكتر المرة الجاية!",
+      "host_id": "a0000000-0000-4000-8000-000000000004",
+      "event_id": "b0000000-0000-4000-8000-000000000025",
+      "reviewer_id": "c0000000-0000-4000-8000-000000000008"
+    },
+    {
+      "rating": 4,
+      "comment": "Delicious. Groppi was a highlight.",
+      "host_id": "a0000000-0000-4000-8000-000000000003",
+      "event_id": "b0000000-0000-4000-8000-000000000026",
+      "reviewer_id": "c0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "rating": 5,
+      "comment": "I would never have found half of these places on my own.",
+      "host_id": "a0000000-0000-4000-8000-000000000003",
+      "event_id": "b0000000-0000-4000-8000-000000000026",
+      "reviewer_id": "c0000000-0000-4000-8000-000000000007"
+    }
+  ],
+  "accounts": [
+    {
+      "email": "ahmed@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000001"
+    },
+    {
+      "email": "ali@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000008"
+    },
+    {
+      "email": "dina@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000007"
+    },
+    {
+      "email": "hana@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000003"
+    },
+    {
+      "email": "karim@masar.demo",
+      "user_id": "a0000000-0000-4000-8000-000000000003"
+    },
+    {
+      "email": "laila@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "email": "mahmoud@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000004"
+    },
+    {
+      "email": "mariam@masar.demo",
+      "user_id": "a0000000-0000-4000-8000-000000000005"
+    },
+    {
+      "email": "nour@masar.demo",
+      "user_id": "a0000000-0000-4000-8000-000000000001"
+    },
+    {
+      "email": "omar@masar.demo",
+      "user_id": "a0000000-0000-4000-8000-000000000006"
+    },
+    {
+      "email": "salma@masar.demo",
+      "user_id": "a0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "email": "sara@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000005"
+    },
+    {
+      "email": "tarek@masar.demo",
+      "user_id": "c0000000-0000-4000-8000-000000000006"
+    },
+    {
+      "email": "youssef@masar.demo",
+      "user_id": "a0000000-0000-4000-8000-000000000004"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "a0000000-0000-4000-8000-000000000001",
+      "bio": "Architect and Islamic Cairo storyteller. Ten years walking the old city.",
+      "city": "cairo",
+      "name": "Nour El-Din Hassan",
+      "is_host": true,
+      "interests": [
+        "heritage",
+        "architecture",
+        "history"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000001",
+      "host_verified": true
+    },
+    {
+      "id": "a0000000-0000-4000-8000-000000000002",
+      "bio": "Street photographer. I run women-only sunrise photo walks around Cairo.",
+      "city": "cairo",
+      "name": "Salma Adel",
+      "is_host": true,
+      "interests": [
+        "photography",
+        "heritage"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000002",
+      "host_verified": true
+    },
+    {
+      "id": "a0000000-0000-4000-8000-000000000003",
+      "bio": "Food writer. If it is fried, stuffed or soaked in syrup, I know where to find it.",
+      "city": "cairo",
+      "name": "Karim Mostafa",
+      "is_host": true,
+      "interests": [
+        "food",
+        "culture"
+      ],
+      "languages": [
+        "ar",
+        "en",
+        "fr"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000003",
+      "host_verified": true
+    },
+    {
+      "id": "a0000000-0000-4000-8000-000000000004",
+      "bio": "Mountain guide and wilderness first responder. Wadi Degla regular, Sinai at heart.",
+      "city": "cairo",
+      "name": "Youssef Fathy",
+      "is_host": true,
+      "interests": [
+        "hiking",
+        "nature",
+        "camping"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000004",
+      "host_verified": true
+    },
+    {
+      "id": "a0000000-0000-4000-8000-000000000005",
+      "bio": "Alexandrian born and raised. Sea, history and the best fish in town.",
+      "city": "alexandria",
+      "name": "Mariam Gamal",
+      "is_host": true,
+      "interests": [
+        "heritage",
+        "food",
+        "sea"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000005",
+      "host_verified": false
+    },
+    {
+      "id": "a0000000-0000-4000-8000-000000000006",
+      "bio": "Desert trips to Siwa and Fayoum with local families and campfires.",
+      "city": "siwa",
+      "name": "Omar Siwi",
+      "is_host": true,
+      "interests": [
+        "desert",
+        "camping",
+        "stargazing"
+      ],
+      "languages": [
+        "ar",
+        "en",
+        "de"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=a0000000-0000-4000-8000-000000000006",
+      "host_verified": true
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000001",
+      "bio": "Weekend walker, weekday engineer.",
+      "city": "cairo",
+      "name": "Ahmed Samir",
+      "is_host": false,
+      "interests": [
+        "heritage",
+        "hiking"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000001",
+      "host_verified": false
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000002",
+      "bio": "Learning Cairo one street at a time.",
+      "city": "cairo",
+      "name": "Laila Hamdy",
+      "is_host": false,
+      "interests": [
+        "photography",
+        "food"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000002",
+      "host_verified": false
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000003",
+      "bio": null,
+      "city": "giza",
+      "name": "Hana Mansour",
+      "is_host": false,
+      "interests": [
+        "nature"
+      ],
+      "languages": [
+        "ar"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000003",
+      "host_verified": false
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000004",
+      "bio": "Trail runner.",
+      "city": "cairo",
+      "name": "Mahmoud Ezzat",
+      "is_host": false,
+      "interests": [
+        "hiking"
+      ],
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000004",
+      "host_verified": false
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000005",
+      "bio": "Design student. Love old buildings.",
+      "city": "cairo",
+      "name": "Sara Khaled",
+      "is_host": false,
+      "interests": [
+        "architecture",
+        "photography"
+      ],
+      "languages": [
+        "en",
+        "ar"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000005",
+      "host_verified": false
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000006",
+      "bio": null,
+      "city": "alexandria",
+      "name": "Tarek Nabil",
+      "is_host": false,
+      "interests": [
+        "food",
+        "sea"
+      ],
+      "languages": [
+        "ar"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000006",
+      "host_verified": false
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000007",
+      "bio": "Expat in Cairo, trying everything.",
+      "city": "cairo",
+      "name": "Dina Raafat",
+      "is_host": false,
+      "interests": [
+        "culture",
+        "food"
+      ],
+      "languages": [
+        "en"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000007",
+      "host_verified": false
+    },
+    {
+      "id": "c0000000-0000-4000-8000-000000000008",
+      "bio": null,
+      "city": "cairo",
+      "name": "Ali Hegazy",
+      "is_host": false,
+      "interests": [
+        "desert"
+      ],
+      "languages": [
+        "ar"
+      ],
+      "avatar_url": "https://i.pravatar.cc/300?u=c0000000-0000-4000-8000-000000000008",
+      "host_verified": false
+    }
+  ],
+  "applications": [
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000001"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000005",
+      "event_id": "b0000000-0000-4000-8000-000000000001"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000007",
+      "event_id": "b0000000-0000-4000-8000-000000000001"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000008",
+      "event_id": "b0000000-0000-4000-8000-000000000001"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "status": "approved",
+      "message": "Vegetarian here!",
+      "user_id": "c0000000-0000-4000-8000-000000000002",
+      "event_id": "b0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000003",
+      "event_id": "b0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000004",
+      "event_id": "b0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000005",
+      "event_id": "b0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000006",
+      "event_id": "b0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "status": "pending",
+      "message": "Any chance a seat opens up?",
+      "user_id": "c0000000-0000-4000-8000-000000000007",
+      "event_id": "b0000000-0000-4000-8000-000000000002"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000002",
+      "event_id": "b0000000-0000-4000-8000-000000000005"
+    },
+    {
+      "status": "pending",
+      "message": "First photo walk for me",
+      "user_id": "c0000000-0000-4000-8000-000000000003",
+      "event_id": "b0000000-0000-4000-8000-000000000005"
+    },
+    {
+      "status": "pending",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000005",
+      "event_id": "b0000000-0000-4000-8000-000000000005"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000006"
+    },
+    {
+      "status": "cancelled",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000002",
+      "event_id": "b0000000-0000-4000-8000-000000000006"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000004",
+      "event_id": "b0000000-0000-4000-8000-000000000006"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000006",
+      "event_id": "b0000000-0000-4000-8000-000000000006"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000008",
+      "event_id": "b0000000-0000-4000-8000-000000000006"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000003",
+      "event_id": "b0000000-0000-4000-8000-000000000017"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000006",
+      "event_id": "b0000000-0000-4000-8000-000000000017"
+    },
+    {
+      "status": "rejected",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000005",
+      "event_id": "b0000000-0000-4000-8000-000000000020"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000007",
+      "event_id": "b0000000-0000-4000-8000-000000000020"
+    },
+    {
+      "status": "approved",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000004",
+      "event_id": "b0000000-0000-4000-8000-000000000023"
+    },
+    {
+      "status": "pending",
+      "message": "I have done Kilimanjaro",
+      "user_id": "c0000000-0000-4000-8000-000000000008",
+      "event_id": "b0000000-0000-4000-8000-000000000023"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000024"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000002",
+      "event_id": "b0000000-0000-4000-8000-000000000024"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000005",
+      "event_id": "b0000000-0000-4000-8000-000000000024"
+    },
+    {
+      "status": "no_show",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000006",
+      "event_id": "b0000000-0000-4000-8000-000000000024"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000025"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000004",
+      "event_id": "b0000000-0000-4000-8000-000000000025"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000008",
+      "event_id": "b0000000-0000-4000-8000-000000000025"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000001",
+      "event_id": "b0000000-0000-4000-8000-000000000026"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000002",
+      "event_id": "b0000000-0000-4000-8000-000000000026"
+    },
+    {
+      "status": "attended",
+      "message": null,
+      "user_id": "c0000000-0000-4000-8000-000000000007",
+      "event_id": "b0000000-0000-4000-8000-000000000026"
+    }
+  ]
 }
