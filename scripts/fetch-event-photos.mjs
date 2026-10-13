@@ -15,8 +15,8 @@ const PLACES = [
   { slug: 'khan-el-khalili', q: ['Khan el-Khalili', 'Khan al-Khalili bazaar'] },
   { slug: 'coptic-cairo', count: 4, q: ['Hanging Church Cairo', 'Coptic Cairo'] },
   { slug: 'downtown', q: ['Talaat Harb Square Cairo', 'Downtown Cairo building'] },
-  { slug: 'zamalek', q: ['Cairo Tower Zamalek', 'Cairo Tower Nile'] },
-  { slug: 'wadi-degla', count: 5, q: ['Wadi Degla', 'Wadi Degla Protectorate'] },
+  { slug: 'zamalek', q: ['Zamalek Nile Cairo', 'Gezira Island Cairo Nile', 'Cairo Tower'] },
+  { slug: 'wadi-degla', count: 4, q: ['Wadi Degla canyon', 'Wadi Degla valley', 'Wadi Degla'] },
   { slug: 'azhar-park', q: ['Al-Azhar Park Cairo', 'Azhar Park Cairo'] },
   { slug: 'citadel', q: ['Mosque-Madrasa of Sultan Hassan', 'Sultan Hassan Mosque Cairo', 'Cairo Citadel'] },
   { slug: 'bab-zuweila', q: ['Bab Zuweila', 'Bab Zuwayla'] },
@@ -28,7 +28,7 @@ const PLACES = [
   { slug: 'montazah', q: ['Montaza Palace', 'Montazah Palace Alexandria'] },
   { slug: 'bibliotheca', q: ['Bibliotheca Alexandrina', 'Library of Alexandria building'] },
   { slug: 'wadi-el-rayan', count: 4, q: ['Wadi El Rayan waterfall', 'Wadi El Rayan'] },
-  { slug: 'tunis-village', q: ['Tunis village Fayoum', 'Lake Qarun'] },
+  { slug: 'tunis-village', q: ['Lake Qarun', 'Qarun lake Fayoum', 'Tunis village Fayoum'] },
   { slug: 'wadi-al-hitan', q: ['Wadi Al-Hitan', 'Wadi El Hitan'] },
   { slug: 'siwa', count: 4, q: ['Shali fortress Siwa', 'Siwa Oasis'] },
   { slug: 'siwa-salt-lake', q: ['Siwa salt lake', 'Siwa Oasis lake'] },
@@ -37,6 +37,17 @@ const PLACES = [
   { slug: 'qalawun', q: ['Qalawun complex', 'Complex of Sultan Qalawun'] },
   { slug: 'cafe-riche', q: ['Groppi Cairo', 'Cafe Riche Cairo', 'Downtown Cairo street'] },
 ];
+
+// Reviewed and left out: identifiable children or posed people, paintings, maps, night shots.
+const EXCLUDE = new Set([
+  'File:Boys playing street football in Egypt.jpg',
+  'File:Wadi Al Rayan Protected Area.jpg',
+  'File:Edward Thomas Daniell - Summit of Mount Sinai or Jebel Musa - B1977.14.4294 - Yale Center for British Art.jpg',
+  'File:By ovedc - Hanging Church (Cairo) - 20.jpg',
+  'File:Cairo Tower, Barrio Zamalek, El Cairo, Egipto.jpg',
+  'File:Ptyodactylus At Wadi Degla by Hatem Moushir ٢.jpg',
+]);
+const EXCLUDE_PREFIX = ['File:Edward Thomas Daniell'];
 
 const OK_LICENSE = /^(cc[ -]?by(-sa)?[ -]?\d|cc0|public domain|pd)/i;
 const BAD_LICENSE = /nc|nd/i;
@@ -82,7 +93,7 @@ for (const place of PLACES) {
     try {
       for (const c of await search(q)) {
         if (picked.length >= want) break;
-        if (!used.has(c.title)) picked.push(c);
+        if (!used.has(c.title) && !EXCLUDE.has(c.title) && !EXCLUDE_PREFIX.some((x) => c.title.startsWith(x))) picked.push(c);
       }
     } catch (e) {
       console.warn(String(e));
