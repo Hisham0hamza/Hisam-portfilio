@@ -257,14 +257,6 @@
   },
   {
     "file": "siwa-2.jpg",
-    "title": "Shali Fortress44.jpg",
-    "author": "ولاء",
-    "license": "Public domain",
-    "licenseUrl": "",
-    "source": "https://commons.wikimedia.org/wiki/File:Shali_Fortress44.jpg"
-  },
-  {
-    "file": "siwa-3.jpg",
     "title": "Shali Fortress001.jpg",
     "author": "ولاء",
     "license": "Public domain",
@@ -272,12 +264,20 @@
     "source": "https://commons.wikimedia.org/wiki/File:Shali_Fortress001.jpg"
   },
   {
-    "file": "siwa-4.jpg",
+    "file": "siwa-3.jpg",
     "title": "Shali Fortress12.jpg",
     "author": "ولاء",
     "license": "Public domain",
     "licenseUrl": "",
     "source": "https://commons.wikimedia.org/wiki/File:Shali_Fortress12.jpg"
+  },
+  {
+    "file": "siwa-4.jpg",
+    "title": "Shali Fortress37.jpg",
+    "author": "ولاء",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Shali_Fortress37.jpg"
   },
   {
     "file": "siwa-salt-lake.jpg",
@@ -337,10 +337,10 @@
   },
   {
     "file": "cafe-riche.jpg",
-    "title": "Groppi caffe.jpg",
-    "author": "Mohamed Ouda",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Groppi_caffe.jpg"
+    "title": "J.Groppi.JPG",
+    "author": "Maher27777",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:J.Groppi.JPG"
   }
 ]

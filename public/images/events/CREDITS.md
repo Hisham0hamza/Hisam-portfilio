@@ -36,9 +36,9 @@ Photos from [Wikimedia Commons](https://commons.wikimedia.org), resized to 1280p
 | tunis-village.jpg | [Lake Moeris 031.JPG](https://commons.wikimedia.org/wiki/File:Lake_Moeris_031.JPG) | لا روسا | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 | wadi-al-hitan.jpg | [Dorudon atrox fossil at Wadi El-Hitan, Egypt, March 2008.jpg](https://commons.wikimedia.org/wiki/File:Dorudon_atrox_fossil_at_Wadi_El-Hitan,_Egypt,_March_2008.jpg) | Clr202 (Christoph Rohner) at de.wikipedia | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) |
 | siwa.jpg | [Shali Fortress002.jpg](https://commons.wikimedia.org/wiki/File:Shali_Fortress002.jpg) | ولاء | Public domain |
-| siwa-2.jpg | [Shali Fortress44.jpg](https://commons.wikimedia.org/wiki/File:Shali_Fortress44.jpg) | ولاء | Public domain |
-| siwa-3.jpg | [Shali Fortress001.jpg](https://commons.wikimedia.org/wiki/File:Shali_Fortress001.jpg) | ولاء | Public domain |
-| siwa-4.jpg | [Shali Fortress12.jpg](https://commons.wikimedia.org/wiki/File:Shali_Fortress12.jpg) | ولاء | Public domain |
+| siwa-2.jpg | [Shali Fortress001.jpg](https://commons.wikimedia.org/wiki/File:Shali_Fortress001.jpg) | ولاء | Public domain |
+| siwa-3.jpg | [Shali Fortress12.jpg](https://commons.wikimedia.org/wiki/File:Shali_Fortress12.jpg) | ولاء | Public domain |
+| siwa-4.jpg | [Shali Fortress37.jpg](https://commons.wikimedia.org/wiki/File:Shali_Fortress37.jpg) | ولاء | Public domain |
 | siwa-salt-lake.jpg | [Siwa Salt pools13.jpg](https://commons.wikimedia.org/wiki/File:Siwa_Salt_pools13.jpg) | ولاء | Public domain |
 | blue-hole-dahab.jpg | [Dahab - The blue hole - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Dahab_-_The_blue_hole_-_panoramio.jpg) | Francesco Lo Bello | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) |
 | mount-sinai.jpg | [Mount Sinai Egypt.jpg](https://commons.wikimedia.org/wiki/File:Mount_Sinai_Egypt.jpg) | Tamerlan at Polish Wikipedia | Public domain |
@@ -46,4 +46,4 @@ Photos from [Wikimedia Commons](https://commons.wikimedia.org), resized to 1280p
 | mount-sinai-3.jpg | [Mount sinai summits.jpg](https://commons.wikimedia.org/wiki/File:Mount_sinai_summits.jpg) | Ahmed Azam | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | mount-sinai-4.jpg | [Panorama Mount Sinai south.jpg](https://commons.wikimedia.org/wiki/File:Panorama_Mount_Sinai_south.jpg) | Florian Prischl | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 | qalawun.jpg | [Qalawun complex 05.jpg](https://commons.wikimedia.org/wiki/File:Qalawun_complex_05.jpg) | Marsupium | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
-| cafe-riche.jpg | [Groppi caffe.jpg](https://commons.wikimedia.org/wiki/File:Groppi_caffe.jpg) | Mohamed Ouda | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| cafe-riche.jpg | [J.Groppi.JPG](https://commons.wikimedia.org/wiki/File:J.Groppi.JPG) | Maher27777 | Public domain |
